@@ -16,8 +16,9 @@ namespace GJ
             EnemyAttSpeed = 2.5f;
             EnemyAttPower = 1;
             EnemyHp = 6;
+            enemyOriginHp = EnemyHp;                        // 적의 변경되지 않은 기본 체력
 
-            delayValeue = (EnemySpeed / EnemyHp) * 0.7f;        // 딜레이값 초기화
+            delayValeue = (EnemySpeed / EnemyHp) * 0.7f;    // 딜레이값 초기화
         }
     }
 }

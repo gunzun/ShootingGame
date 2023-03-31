@@ -8,7 +8,8 @@ namespace GJ
     {
         protected ENEMY_TYPE m_type;                        // 적의 종류
         private float enemyHp;                              // 적의 체력
-        private float enemySpeed;                           // 적의 기본 이동 속도
+        protected float enemyOriginHp;                      // 적의 기본 체력을 받을 변수
+        protected float enemySpeed;                         // 적의 기본 이동 속도
         private float enemyAttSpeed;                        // 적의 공격 속도
         private int enemyAttPower;                          // 적의 공격 파워
         protected float delayValeue;                        // 적이 공격받았을 때 적에게 줄 딜레이 값
@@ -21,7 +22,7 @@ namespace GJ
         protected float EnemyAttSpeed { get => enemyAttSpeed; set => enemyAttSpeed = value; }
         protected int EnemyAttPower { get => enemyAttPower; set => enemyAttPower = value; }
         #endregion
-        private void Update()
+        private void Update()   
         {
             EnemyMove();
         }
@@ -91,6 +92,52 @@ namespace GJ
             else                                    // 속도가 너무 느리다면 0으로 만든다
             {
                 enemySpeed = 0f;
+            }
+
+            if (enemyHp >= enemyOriginHp)
+            {
+                Debug.LogError("Enemy의 Hp가 이상해요");
+                return;
+            }
+            else
+            {
+                float num = enemyHp / 6 * 100;
+                if (num >= 100)
+                {
+                    num = 100f;
+                }
+                else if (num <= 0)
+                {
+                    num = 0;
+                }
+                if (num <= (100 / enemyOriginHp))
+                {
+                    transform.GetChild(0).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 2)
+                {
+                    transform.GetChild(1).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 3)
+                {
+                    transform.GetChild(2).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 3)
+                {
+                    transform.GetChild(3).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 4)
+                {
+                    transform.GetChild(4).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 5)
+                {
+                    transform.GetChild(5).gameObject.SetActive(true);
+                }
+                else if (num <= (100 / enemyOriginHp) * 6)
+                {
+                    transform.GetChild(6).gameObject.SetActive(true);
+                }
             }
             // 피격 애니메이션을 주고
             if (enemyHp <= 0)                       // 만약 에너미 체력이 없다면 눈사람으로 만든다.

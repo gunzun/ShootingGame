@@ -42,15 +42,15 @@ namespace GJ
             switch (m_type)
             {
                 case ENEMY_TYPE.ENEMY1:
-                    Instantiate(enemy1Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, 0.0f), 
+                    Instantiate(enemy1Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, -0.1f), 
                         transform.rotation);
                     break;
                 case ENEMY_TYPE.ENEMY2:
-                    Instantiate(enemy2Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, 0.0f), 
+                    Instantiate(enemy2Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, -0.1f), 
                         transform.rotation);
                     break;
                 case ENEMY_TYPE.ENEMY3:
-                    Instantiate(enemy3Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, 0.0f), 
+                    Instantiate(enemy3Prefab, this.transform.position + new Vector3(EnemyPos_x, 0.0f, -0.1f), 
                         transform.rotation);
                     break;
                 default:
