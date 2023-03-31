@@ -1,0 +1,6209 @@
+fileFormatVersion: 2
+guid: 90d02c3b73079d24d9181cb06a96ab42
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1092
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b19a74aa1ec97943bba2ce20b0a472f
+      internalID: -1277463440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1090
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3d4ba81cd90ca42ae9bd440a89960a
+      internalID: 504623017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1091
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c587e4d130e9a164f8af1dfc8af386d5
+      internalID: 257841492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1090
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2953207b47aee8c43a3adc8b760edcca
+      internalID: -47871738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1092
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd646c2c92e891d43843c2da21da144c
+      internalID: 1124865317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1090
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d7f8a32d9b2ba4ab51549ac9257bca
+      internalID: -139877373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1091
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c9d33cd29241f4dad8eafd2140572d
+      internalID: -964530460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_7
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1090
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b4134733d4ced42b394ab8be8efc58
+      internalID: 1664178823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1093
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a2c6aa3c20bf44eb180c5e86dbcc91
+      internalID: -2078225630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1093
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1aa44e98f8b9b429b44bada3cb7895
+      internalID: -548597719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_10
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1092
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d09d231ef998f4389a551875c65710
+      internalID: -411604076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1091
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2379e2e9f70d34bb0decb848e5b285
+      internalID: -321323204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1091
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056f64e219d35e644880a232cd54c823
+      internalID: 1218414249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_13
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1092
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b433393cb940b534198b0e9dc7fe85e4
+      internalID: 2109142445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_14
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1093
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa74bf11c5e383442ab2768169e66c4f
+      internalID: -144195102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1036
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2edc99b002e0964bade6ae36639b115
+      internalID: -665718889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1035
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0e4260c1ee03c4cb3c741b3c16c96c
+      internalID: 704525819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1035
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d4140f1f2ef7d459a44e0a6d7863e1
+      internalID: -1102101205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_18
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1032
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89f4abf063c1bf4d89b22fb79d5144a
+      internalID: -422707371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1032
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53705c7be692d6846a738d427158aaae
+      internalID: 1921920742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1036
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83cb401e4a3a8e4282527eed89eba01
+      internalID: -2035031547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_21
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1034
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8bd7f15dda7434da14f1eeee8ac597
+      internalID: 1529658555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1028
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f881e788c6df7744aa409fa42cfb825
+      internalID: 684191337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_23
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1029
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bb816089dc25e44b3b4c01e3db2cb5
+      internalID: 1150889062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_24
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1035
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fee9f7cd0fe4544ab1999963a4dcc2d
+      internalID: -1524107423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1037
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ba2db52a49a8945acf0ab90f65acde
+      internalID: 245374937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_26
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1035
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb46d0f09270dc94485ef618ec0647ee
+      internalID: 1817691408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_27
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1035
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e8b026da9898d4b863b266b3999df8
+      internalID: 1632223664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_28
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1036
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5800fb241e8477648a17f426713429f8
+      internalID: -1850089729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_29
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1036
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d778da24158b1a4e9cc2586f574a55b
+      internalID: -406772109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_30
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1034
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f176221d6d178a4398bdbc79ade8651
+      internalID: 2013897863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_31
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 988
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf463fdf85f18a48a53dd515ed0d52e
+      internalID: -1853183620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_32
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 986
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d789a86539265d419f60d87ab2df54f
+      internalID: 1598166267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_33
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 989
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c03fa1ef415d064aba648c6f3934092
+      internalID: 1306191770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_34
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 987
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add3e0dd1d1f5ce4b9450941ae9232d4
+      internalID: 318530342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_35
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 987
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb94e0b618cfe60448c9d315998853ab
+      internalID: 126290915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 988
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc13260065cf4447b0c8f992320736b
+      internalID: 1668970005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_37
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 988
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cb884c8657fc5488c1f3fd1a3fecf3
+      internalID: -373479568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_38
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 990
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d61ea18ec87ec74da9e26c817fb9756
+      internalID: 1085543080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_39
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 989
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdced61d649e9b47af63a3cfa3bb039
+      internalID: 1888475616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_40
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 987
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2999a5ae16592f4d93056f25da32a76
+      internalID: 609733640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_41
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 988
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61ddd5eaf93f38449ba449822b23027
+      internalID: -1537589021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_42
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 989
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea8d9127ae45f742a6f63923daa0b12
+      internalID: 10557211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_43
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 989
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d597b5aa6554d514facd76b19cb0563a
+      internalID: -1597812011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_44
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 988
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9393025c4c7d9a4eb48fe65f371b072
+      internalID: -88300490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_45
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 989
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a0e3cc1d6ec7642bf2a6ff08f78972
+      internalID: 1202775833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_46
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 989
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722f983386b16f74ca8820bfafc025db
+      internalID: -2011638427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_47
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 942
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c58574df65218140bebded1d22509cb
+      internalID: -79481440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_48
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 939
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1398e6677c916745b81e5cf3d04b81a
+      internalID: 67146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_49
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 940
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ffbfba5c7aa9645a59e40f96738c81
+      internalID: 1222600468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_50
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 941
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f349776885e7b4ea97afe0261ed692
+      internalID: 709626360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_51
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 941
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a586504780bb24a8a656068648a763
+      internalID: 1682519774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_52
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 940
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9955d2645724e64eb20bc05d0f90be6
+      internalID: -494507920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_53
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 941
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b33816308134b048900d7bc7c6ca279
+      internalID: -1682604592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_54
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 939
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa759be3f031eb498d0279ea4a29384
+      internalID: 234524290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_55
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 939
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b047265663378f4ca0141397bbb1670
+      internalID: -1925038155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_56
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 939
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507230ed22f749b4d80fa376d8d436ea
+      internalID: 1235961487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_57
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 940
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a402e7f2de3d4479718124b0cf41ef
+      internalID: 3799613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_58
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 940
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2b2a1a6f68959469821f91a95d91c8
+      internalID: 123690124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_59
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 936
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1768456ad2c244b9f2939001b4e045
+      internalID: 461808205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_60
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 936
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b5e2006270f684c9fb986e517e9564
+      internalID: 2048135064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_61
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 939
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625816757fad389419cbc5139e659126
+      internalID: 583857069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_62
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 940
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade5ba8326560fd49b438c85a4dcb002
+      internalID: -675030337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_63
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 892
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e183e82423266404ab3ef5fa7e04a647
+      internalID: -1682874911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_64
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 890
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7726794b0f82ae4c86e73fc8b9102c4
+      internalID: -1536321543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_65
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 891
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde8f770008d3294b84614c818d88fb5
+      internalID: -755758067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_66
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 891
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7877745f449d2644af475440081241c
+      internalID: -644081959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_67
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 890
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3df677f924b4144b6ccbac4e3e167f
+      internalID: 589092419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_68
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 890
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708e12015f68adb469e27cfaa2466af8
+      internalID: 1871867626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_69
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 842
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bd380a5a327784190e97c94b0b8c69
+      internalID: 718070391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_70
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 843
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcfa679c87568b42b5d5b8629703a63
+      internalID: 302550454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_71
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 842
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f235c99bc39b3439ad1e16513584b4
+      internalID: 799997747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_72
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 842
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891e516939a180d4e8b15dce2f307b13
+      internalID: -847901217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_73
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 843
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1949a788f2ef3d046b7377e136417b9d
+      internalID: -1738803025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_74
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 842
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c636f1a8320a61945849afe44a4d2685
+      internalID: -824422278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_75
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 842
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53df2419fcd5a484b861e6d5fdfd1a7e
+      internalID: -229516842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_76
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 842
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c20547c95ddc7c48a0b98e4c7502406
+      internalID: -1919622600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_77
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 843
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bbeed683463a24faf176ff787ad3d7
+      internalID: 130901440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_78
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 843
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d112a7e1f787a9429972606c5371c89
+      internalID: 1648929308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_79
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 842
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c89045bfa28b2e43961f4ade5ae2ee8
+      internalID: -502743178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_80
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 842
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6d02e691477ce4296f8175a7469ba9
+      internalID: 1611303256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_81
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 842
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4efa656b472bb4f805bed1659c9f44
+      internalID: -2108234037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_82
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 842
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36606d35d316beb458bfb9a23e31aab0
+      internalID: 1921450984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_83
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 842
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec22b08c37dcfc47a410cd6b2e62f10
+      internalID: 1780972943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_84
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 795
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bb4f8f9b94d254c95dfc16fba3a2c5
+      internalID: -1060320885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_85
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 794
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e742329e37242684b9433e903984aed3
+      internalID: -647931887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_86
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 795
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e36db3a33d22384f855de37dda6c21d
+      internalID: 1950291631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_87
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 795
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6347e9e10735f0b459501eee3b87f0a8
+      internalID: 1280165556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_88
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 795
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d19c01a879105243b81f1262200c13d
+      internalID: -1800705066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_89
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 794
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfd9024c1b948f4b819c2baa59efd99
+      internalID: 2068526334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_90
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 794
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b09578f0f27dc43a15b147628afcf7
+      internalID: 2131167546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_91
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 794
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb061064b5c6544c9a0066b910479e0
+      internalID: 414070002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_92
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 794
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe976cdbf9720d4fa432978751d6490
+      internalID: 706938630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_93
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 794
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d9342ff57a58a4ab6c847416b28316
+      internalID: -204828835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_94
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 794
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb325e27ba6d4b14b838e5e8fd53d262
+      internalID: 716125128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_95
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 794
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b8255c467681d43aca324c6924f1c2
+      internalID: 495895490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_96
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 794
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b2f88a63c2ccd4eaa2c5ec42e57753
+      internalID: 1377040161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_97
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 794
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfdbeec812e86642bef177f220210cd
+      internalID: -1731130109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_98
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 795
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db220780017a08498a73b8248f933dd
+      internalID: 1617603968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_99
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 795
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05db229b870d3e140b2bccca540c2c45
+      internalID: -421818147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_100
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 746
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1bf3f8aca7e824182780878b66d5df
+      internalID: 1155177062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_101
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 746
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921bdabcf15ddf844b3f4d5e17643bca
+      internalID: 364500047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_102
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 747
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad39191e2319c49b98a8fe04ebdf10
+      internalID: -513286377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_103
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 746
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8cbad4b5200aa489a44b60734622f5
+      internalID: -891522351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_104
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 746
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1f3938b2dbab544b2c61ac3e0f4bd3
+      internalID: 906091775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_105
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 747
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb791ec23e3ee004c804f538938a4562
+      internalID: 281584528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_106
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 746
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6a16d7401391a4ca50ba6f337f2a1d
+      internalID: 1136223939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_107
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 747
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1029331ee053dfe4b8bd57312c747afb
+      internalID: -1028813954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_108
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 747
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1734c4f95282fdc4681912f5899ce548
+      internalID: -1010929346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_109
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 746
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd705e0cbe97de1458f84e550adbec7d
+      internalID: 1397538201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_110
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 746
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a9c041337c97140b17ba7a0caa4778
+      internalID: -277458649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_111
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 746
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ed93d74db42b446964350a42d466d3
+      internalID: -900238930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_112
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 746
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4132dbedc2f64a146bcbc22b08820d79
+      internalID: 497795366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_113
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 744
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362695af7d775574c840595f483f0f96
+      internalID: -1094580632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_114
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 744
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6576061534c8ca44a17508f6156ce3c
+      internalID: -662783541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_115
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 744
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6db26b14bfe58c489e38a7c9237b4e6
+      internalID: -1502754649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_116
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 696
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf9fcc90bb766e4da4ff0f29d79de60
+      internalID: -484630754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_117
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 696
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2fe90edbc94fa4f8829ffb16db194e
+      internalID: 618982402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_118
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 696
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ff05826a6c4e14a80b47ac1f66d59f
+      internalID: -1274063257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_119
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 698
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a12cb09265ec3d4eb480aa520b8524a
+      internalID: -817173167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_120
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 699
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756d8ad5816b1c0488dc28108b52f1f8
+      internalID: -736488469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_121
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 698
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9504287eb093b6e48876051a0aebbd31
+      internalID: -2051124858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_122
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 701
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd32322f8ef107447ae2ddd792d037d6
+      internalID: -36477999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_123
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 701
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d2739780f7e724c8b78e0ec7a44735
+      internalID: -2038945768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_124
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 698
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2b5eace3c92f442825a0a19fb8ab37
+      internalID: 976728158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_125
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 702
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f127b542873fba469e98fd893cf41e2
+      internalID: -437747408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_126
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 654
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15036feeefc5f7b4d9aa3148fff0a314
+      internalID: -835273811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_127
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 654
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b778c079938b63a40973368cc56c1a6b
+      internalID: 1299195546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_128
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 654
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6ffbe42dd62854daeede7261b7786a
+      internalID: -375413499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_129
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 654
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17ac1c3cb219884eb6a09894e55d07c
+      internalID: 1342541368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_130
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 654
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bac41abd3ac3104b8aa1fb76363a7c8
+      internalID: -1807866083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_131
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 653
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d902d46640e77a439efe129ef623186
+      internalID: -1058767093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_132
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 653
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414cb0223eb61154793407748975a615
+      internalID: 430371876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_133
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 650
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6366f69d60d7bb048ae2e32807778e99
+      internalID: -294029248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_134
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 654
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e83ab1a5b42294ca83a164d1d81705
+      internalID: -671503505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_135
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 654
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90efed7695ac22b489a6c34fb376920b
+      internalID: -1503354897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_136
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 654
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cc1a63c4930a240a6465dd7f8ee5af
+      internalID: 1601512443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_137
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 654
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f795127bc7d4734e898db5a55ad210d
+      internalID: -1110810254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_138
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 654
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60397fd5dd1cf7943a3ef38cae210e06
+      internalID: 1523493806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_139
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 654
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a4fe4b4b9148e4491262433dd10a8b
+      internalID: -1170453401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_140
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 654
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c390e999a57fe40b0ccc41cd2815c4
+      internalID: -1298560059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_141
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 605
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ff33619e244b544afb6c686be51a5f
+      internalID: 1252547341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_142
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 602
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e7ea1b1b970904096da072bae1e26c
+      internalID: 901487647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_143
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 602
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbae9064ce42d14488bb41cd6330f1c5
+      internalID: 1468043817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_144
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 605
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e54fee368c4674694c311b472da036
+      internalID: 1148532854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_145
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 605
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca617ab41317094fa0f6e40d64647b5
+      internalID: -1799273284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_146
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 606
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b02b79b8f79dc47a9024b1247b1c95
+      internalID: -349587529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_147
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 606
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b862ce50ad951408fc950f63f0ed59
+      internalID: -2065838710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_148
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 605
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec4aabf425e8a342ae72c765fdefae6
+      internalID: -630802062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_149
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 605
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5157519f8cc0748a440497086c3ed7
+      internalID: -104144004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_150
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 606
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cad3c4af70e52242953f4a1bacb3bac
+      internalID: 962532690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_151
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 606
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd03b338f57686645abc63b48f0498a3
+      internalID: 1047553015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_152
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 605
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50de274008679c4cbacc6450387c578
+      internalID: -904224208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_153
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 602
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66ebd05ff6a9244fbb975f281f657f8
+      internalID: -858736811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_154
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 605
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8884c4a5f15cb9f4e8407cee22567ba4
+      internalID: -1771738781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_155
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 605
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7433ce8cb88a51408a0ca208c35a4cb
+      internalID: -90356251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_156
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 606
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c863f2cd08c2c4e9290602767b43ca
+      internalID: -310327735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_157
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 554
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ab6082ebe6bc942a2f826e18c5bc77
+      internalID: 949167670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_158
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 557
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd34d2348e5f7314f8443a135912dab5
+      internalID: 1863068031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_159
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 558
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebea6403d90fdc4d88a761f8ce286fe
+      internalID: 732493103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_160
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 557
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd0029da4c69b4e83e3ebf8da16ed3
+      internalID: -763255017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_161
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 554
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077969a85765ddd4f8c8ccda2ac000b5
+      internalID: -1218017260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_162
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 554
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdfa16c0aabf40478f7cac11cd81fb3
+      internalID: -1639812633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_163
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 557
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88c53a0388d6934f8d2e140bf5468f8
+      internalID: 1910206685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_164
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 557
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa9da1ffa2bcf14fbaff2ca332ee9f9
+      internalID: -544929859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_165
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 557
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1974f3c31a12a7b489c4b169cc9eb6be
+      internalID: -1590450424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_166
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 558
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22226d4515cd1004fbf011c02c479ace
+      internalID: 468587346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_167
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 557
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaa69a966c858e4db6d889415568336
+      internalID: 964603270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_168
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 558
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed1986273687024cbf69bc91106a5a7
+      internalID: 1589623214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_169
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 558
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5cbbb5b02a44d469e5c30889c98bf8
+      internalID: 1127303441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_170
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 558
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc5528c1bb0f2048a68bd586029262c
+      internalID: -1738426626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_171
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 557
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e6f180e0140b5448dc2326e111afa9
+      internalID: -255034243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_172
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 555
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159a76b924788e14fb8db84b9ca0aab6
+      internalID: -1873986635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_173
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 507
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7ce642766c12c44abfffb3b84d0120
+      internalID: 1661270651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_174
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 507
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0149e03d46cb4146ab4aecee35620f7
+      internalID: 844278254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_175
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 507
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66416c97609ad3e47ba3287553f2c2b6
+      internalID: -328426490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_176
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 507
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae66bbddae44eb41a9b9bf93a3963d4
+      internalID: -1274807591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_177
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 506
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfcb135e4e63a942b2a389c737eb4a0
+      internalID: -2106903050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_178
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 509
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f49cf59a0b803840afae8b46e1b9876
+      internalID: -742675165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_179
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 510
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a1d5913df7bba4a96f45a05a7ed55e
+      internalID: -598898414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_180
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8646e4d82896b1d4da07f96c43ea3901
+      internalID: 1345236375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_181
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b5a78d9a07ea44ca28508a785bd742
+      internalID: -820712696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_182
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf789178000de440a1719994e086ff3
+      internalID: -754259426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_183
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd258b953f080c4cb8a7d7e1b36b83c
+      internalID: 914878430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_184
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfd685ba60542b49afb503c970a6b93
+      internalID: -1539400530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_185
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 351
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2425a87852e8de249a327dc951ac5fcf
+      internalID: 1176152711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_186
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 347
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e3d6e0627dc9446be748f58230abb1
+      internalID: -1756997962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_187
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 349
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12aeb9764e111b4a9e46d465945f403
+      internalID: 908526227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_188
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 347
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392da9b5d8978b242b42d5de050fe9d1
+      internalID: -343377968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_189
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 349
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66fbdfeba1c3324d8bc2f5ef93c7393
+      internalID: -2030417478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_190
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 338
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb39092bf86022d49af2ab57c47e59fe
+      internalID: 1962589504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_191
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 361
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafd845af33ac9d4ba94301a4e5f2a95
+      internalID: -452543742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_192
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 359
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b03eb76919fbb4a88ab9bf56e13af3
+      internalID: -222549471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_193
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 360
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0490c4c993fc1b48bb62afa0efe5377
+      internalID: -464577464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_194
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 359
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948072def39d0e6478aa08fb2e525a83
+      internalID: 970706211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_195
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 360
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20500087c2974fa49a4e4e67459900ab
+      internalID: -854879489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_196
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 363
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced703717a79cdc47bd0ff0cfb391e48
+      internalID: 64646199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_197
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 363
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492b1c7d1a7bc854781b72ee7c374e85
+      internalID: -279242903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_198
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 269
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b2f327d3a91bd46827dbee314a2b3d
+      internalID: 1323209013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_199
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 265
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d138549ea1242f44d87bacabf81b3b20
+      internalID: -1356011123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_200
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 267
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f203590fad642f459d261cee8bf1723
+      internalID: 2093002268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_201
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 265
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef7f6925e6d68d4d8eee7c8741ed52b
+      internalID: 1541443823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_202
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 267
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31aa53071104e249b96eb53d42d3d68
+      internalID: 1470319929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_203
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 330
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4026cf246ada66f40851de8d146cd19f
+      internalID: -1430366557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_204
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 328
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ec11fdf05851b4196df7e2d1d5755f
+      internalID: -1103999629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_205
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 326
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01989ab20d7d5c24c8d34c2c405bbf9c
+      internalID: 1733069080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_206
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 327
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049e42a73ca974f4b9273fe5a60e4412
+      internalID: -884945178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_207
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 264
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e81117cfcd16148879920c6891a3fb
+      internalID: 1934616968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_208
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 287
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f42f18d586bb84d937daf4bacccfba
+      internalID: -46252192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_209
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 285
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3487e03a7a70e41409675e75d81f53ca
+      internalID: 1256430109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_210
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 286
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65abf13d416c47d43a15adaa91351894
+      internalID: -1879511180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_211
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 285
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c006a1f8f0c98344aae6274bb2e87738
+      internalID: -1925401326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_212
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 286
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5031cc72cfd104b44a71fff8208623d1
+      internalID: 792117403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_213
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 289
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed1d0df6cf951e4d828510ea476f8ce
+      internalID: 693691888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_214
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 289
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb6b4e2e89fdc34db8f2800e96e5a4f
+      internalID: 1209940829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_215
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 256
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c8882d20094474e999763518d5287f
+      internalID: 623080937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_216
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 254
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1999313715ee144fabf707d87596af3
+      internalID: -548314589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_217
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 252
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf3a20af5732354f85ea1a125306e6a
+      internalID: -1830756951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_218
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 253
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185f8a3c8f0a3f84996c3d0b2d248777
+      internalID: 457715098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_219
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 187
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef26fa29293d3d43960366a16319a7b
+      internalID: 11808437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_220
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 183
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23661010a3eba0d4caa4deb02e836276
+      internalID: -1317530290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_221
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 185
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0ce6ffedb926f439867c4cae7aeda4
+      internalID: 200042195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_222
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 183
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b60615e645e2b0419543fd3e0ba192c
+      internalID: -95678355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_223
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 185
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e30f4ae593bf7b4e9ee84332bdc30af
+      internalID: 1487144849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_224
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 190
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b96f7ef504a7642be5ff5967b1282d
+      internalID: 1630671571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_225
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 213
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97f5500009abd4bb4a64be0679f164
+      internalID: -439632679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_226
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 211
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2368583f934362847a58c9e1f03a7d8d
+      internalID: -1493335937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_227
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 212
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f0c6c91e49b644f8e4cc1f5706d47e
+      internalID: -1469389103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_228
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 211
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb42fe6a959d57249bbf4027f7b01fa6
+      internalID: 1880198583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_229
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 212
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b116eaae733ab9d419a7cdabf6fd57e8
+      internalID: 177003370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_230
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 215
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d0857fac55d0c418b986db49b92bbc
+      internalID: -1592101742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_231
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 215
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd219aad0780b84d92d133937809d75
+      internalID: 640189772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_232
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 182
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b195ddd69e4794ba35478e9f9048d7
+      internalID: 331561132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_233
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 180
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f329b8f7b44a664583c7108db4d025f
+      internalID: 275474427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_234
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 178
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e39a942f0b1446a33bd5e3b980009
+      internalID: 2068329847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_235
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 179
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a09714254a90b54abb783bd57bc42f6
+      internalID: 582540899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_236
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 105
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42083eb583711bb47b21d6a237b1f56c
+      internalID: 127933500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_237
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 101
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1496fc9b74588a24e9811ad074c5e222
+      internalID: 408125355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_238
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 103
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93401089ffd1be3418aa851b87da68fb
+      internalID: 214253775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_239
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 101
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b93b917d9fb81489c6cffaaf3d4e5e
+      internalID: -610882993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_240
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 103
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ded1b2131c8a0e4b8daf56b679ac8be
+      internalID: -804938294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_241
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 116
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2690d0271cea7214bb908dfaa9d3261c
+      internalID: 1015522926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_242
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 139
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a582c123402095409348fd32b2ba277
+      internalID: 1888779981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_243
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 137
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fd6ead76065dd468d53e946386dbaa
+      internalID: -1118015582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_244
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 138
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc28f7570e4a3e408884e91cd4cdf47
+      internalID: -2103241842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_245
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 137
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3be1f8b121214c43907f134d45a406f
+      internalID: -105685223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_246
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 138
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4b7ac8280396244ab6ec2b3757228a
+      internalID: -1211173642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_247
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 141
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef2642b44258884f97bb08d87c92c49
+      internalID: -1051708361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_248
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 141
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf61f29004095b344b809ae5ff910590
+      internalID: 1654308068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_249
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 108
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be4d62502cd2a44685ffe33ebd2ddee
+      internalID: -1571823938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_250
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 106
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d7abb115d094248ac37b6b5ae8c735
+      internalID: -1345756142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_251
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 104
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb492898a8058a8408a6ed1ed1c4a7e9
+      internalID: -1514824288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_252
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 105
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ffd8b3575db174cb57380792239aa1
+      internalID: -1313470266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_253
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 23
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5820881617653ea4783fe3d8389e26a1
+      internalID: -40579192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_254
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 19
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b21dc2bf489e0408ce47cc1fe0b026
+      internalID: -1804144873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_255
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 21
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38997e84fbf2f9438836829e023632e
+      internalID: 719668967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_256
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 19
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92131f9c9f2a3744aebe24aa8194504
+      internalID: 512068000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_257
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 21
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955f9ca32cb197f4aa46d1d88b6bf1ff
+      internalID: -722776763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_258
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 42
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c542fe0e36cbd5c4fa403bca4cc31dad
+      internalID: 2139164024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_259
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 65
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22eafb081f6e46748a71557c7a216b40
+      internalID: 516240284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_260
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 63
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035762fbda069da46b9bb077a77f5a30
+      internalID: -4520903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_261
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 64
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64edac387d57b04d8d4bf368f267dd9
+      internalID: 741735062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_262
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 63
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f09027f1d4d2ba41911a94cea5add53
+      internalID: -1409697453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_263
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 64
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84822b93ebf80742806a11277b25a39
+      internalID: -604833196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_264
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 67
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503dc7604c426844cba8e86cf81e4127
+      internalID: 428218710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_265
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 67
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c386e79bb8a28f4a99698180da1fa4a
+      internalID: 1829941230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_266
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 34
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcd13dac56234943b2229d30ae5ef02
+      internalID: 244472850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_267
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 32
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343d746f1aa4830448a4747b3f5f2200
+      internalID: -326388623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_268
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 30
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2072b1579ef990429bfdc8e27355de5
+      internalID: 1526395446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_269
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 31
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646ba120806f6cb4ba8ea0baa129afeb
+      internalID: 1167655355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_270
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 42
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ec8ab7fe028c45b0a4a082cb6fb0e
+      internalID: 444854039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_271
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 42
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1407e6de7f39b040afcf15d6d6cac89
+      internalID: -1471270167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_272
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 27
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa33cca16ab0b4f458048eea991b9b4b
+      internalID: -1151546140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_273
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 27
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449112e5c2744014eafd5b69d202ad4c
+      internalID: -1597848077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_274
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 27
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8bd5cfa5183944e934e2cecfddc6e8
+      internalID: -1372644756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_0: -1277463440
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_1: 504623017
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_10: -411604076
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_100: 1155177062
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_101: 364500047
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_102: -513286377
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_103: -891522351
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_104: 906091775
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_105: 281584528
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_106: 1136223939
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_107: -1028813954
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_108: -1010929346
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_109: 1397538201
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_11: -321323204
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_110: -277458649
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_111: -900238930
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_112: 497795366
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_113: -1094580632
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_114: -662783541
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_115: -1502754649
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_116: -484630754
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_117: 618982402
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_118: -1274063257
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_119: -817173167
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_12: 1218414249
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_120: -736488469
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_121: -2051124858
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_122: -36477999
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_123: -2038945768
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_124: 976728158
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_125: -437747408
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_126: -835273811
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_127: 1299195546
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_128: -375413499
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_129: 1342541368
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_13: 2109142445
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_130: -1807866083
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_131: -1058767093
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_132: 430371876
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_133: -294029248
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_134: -671503505
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_135: -1503354897
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_136: 1601512443
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_137: -1110810254
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_138: 1523493806
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_139: -1170453401
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_14: -144195102
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_140: -1298560059
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_141: 1252547341
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_142: 901487647
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_143: 1468043817
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_144: 1148532854
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_145: -1799273284
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_146: -349587529
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_147: -2065838710
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_148: -630802062
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_149: -104144004
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_15: -665718889
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_150: 962532690
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_151: 1047553015
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_152: -904224208
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_153: -858736811
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_154: -1771738781
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_155: -90356251
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_156: -310327735
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_157: 949167670
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_158: 1863068031
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_159: 732493103
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_16: 704525819
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_160: -763255017
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_161: -1218017260
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_162: -1639812633
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_163: 1910206685
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_164: -544929859
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_165: -1590450424
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_166: 468587346
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_167: 964603270
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_168: 1589623214
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_169: 1127303441
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_17: -1102101205
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_170: -1738426626
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_171: -255034243
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_172: -1873986635
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_173: 1661270651
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_174: 844278254
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_175: -328426490
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_176: -1274807591
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_177: -2106903050
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_178: -742675165
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_179: -598898414
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_18: -422707371
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_180: 1345236375
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_181: -820712696
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_182: -754259426
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_183: 914878430
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_184: -1539400530
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_185: 1176152711
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_186: -1756997962
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_187: 908526227
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_188: -343377968
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_189: -2030417478
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_19: 1921920742
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_190: 1962589504
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_191: -452543742
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_192: -222549471
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_193: -464577464
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_194: 970706211
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_195: -854879489
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_196: 64646199
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_197: -279242903
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_198: 1323209013
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_199: -1356011123
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_2: 257841492
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_20: -2035031547
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_200: 2093002268
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_201: 1541443823
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_202: 1470319929
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_203: -1430366557
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_204: -1103999629
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_205: 1733069080
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_206: -884945178
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_207: 1934616968
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_208: -46252192
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_209: 1256430109
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_21: 1529658555
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_210: -1879511180
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_211: -1925401326
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_212: 792117403
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_213: 693691888
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_214: 1209940829
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_215: 623080937
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_216: -548314589
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_217: -1830756951
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_218: 457715098
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_219: 11808437
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_22: 684191337
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_220: -1317530290
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_221: 200042195
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_222: -95678355
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_223: 1487144849
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_224: 1630671571
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_225: -439632679
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_226: -1493335937
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_227: -1469389103
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_228: 1880198583
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_229: 177003370
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_23: 1150889062
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_230: -1592101742
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_231: 640189772
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_232: 331561132
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_233: 275474427
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_234: 2068329847
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_235: 582540899
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_236: 127933500
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_237: 408125355
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_238: 214253775
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_239: -610882993
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_24: -1524107423
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_240: -804938294
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_241: 1015522926
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_242: 1888779981
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_243: -1118015582
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_244: -2103241842
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_245: -105685223
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_246: -1211173642
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_247: -1051708361
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_248: 1654308068
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_249: -1571823938
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_25: 245374937
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_250: -1345756142
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_251: -1514824288
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_252: -1313470266
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_253: -40579192
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_254: -1804144873
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_255: 719668967
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_256: 512068000
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_257: -722776763
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_258: 2139164024
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_259: 516240284
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_26: 1817691408
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_260: -4520903
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_261: 741735062
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_262: -1409697453
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_263: -604833196
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_264: 428218710
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_265: 1829941230
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_266: 244472850
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_267: -326388623
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_268: 1526395446
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_269: 1167655355
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_27: 1632223664
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_270: 444854039
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_271: -1471270167
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_272: -1151546140
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_273: -1597848077
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_274: -1372644756
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_28: -1850089729
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_29: -406772109
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_3: -47871738
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_30: 2013897863
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_31: -1853183620
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_32: 1598166267
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_33: 1306191770
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_34: 318530342
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_35: 126290915
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_36: 1668970005
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_37: -373479568
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_38: 1085543080
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_39: 1888475616
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_4: 1124865317
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_40: 609733640
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_41: -1537589021
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_42: 10557211
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_43: -1597812011
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_44: -88300490
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_45: 1202775833
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_46: -2011638427
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_47: -79481440
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_48: 67146
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_49: 1222600468
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_5: -139877373
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_50: 709626360
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_51: 1682519774
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_52: -494507920
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_53: -1682604592
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_54: 234524290
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_55: -1925038155
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_56: 1235961487
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_57: 3799613
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_58: 123690124
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_59: 461808205
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_6: -964530460
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_60: 2048135064
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_61: 583857069
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_62: -675030337
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_63: -1682874911
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_64: -1536321543
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_65: -755758067
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_66: -644081959
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_67: 589092419
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_68: 1871867626
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_69: 718070391
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_7: 1664178823
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_70: 302550454
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_71: 799997747
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_72: -847901217
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_73: -1738803025
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_74: -824422278
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_75: -229516842
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_76: -1919622600
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_77: 130901440
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_78: 1648929308
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_79: -502743178
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_8: -2078225630
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_80: 1611303256
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_81: -2108234037
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_82: 1921450984
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_83: 1780972943
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_84: -1060320885
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_85: -647931887
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_86: 1950291631
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_87: 1280165556
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_88: -1800705066
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_89: 2068526334
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_9: -548597719
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_90: 2131167546
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_91: 414070002
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_92: 706938630
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_93: -204828835
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_94: 716125128
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_95: 495895490
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_96: 1377040161
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_97: -1731130109
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_98: 1617603968
+      geomancer_full_sprite_sheet_female_by_lijj_d5ynah3_99: -421818147
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

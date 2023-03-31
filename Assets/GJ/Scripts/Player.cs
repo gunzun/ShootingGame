@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GJ
+namespace nothing
 {
-    public class Player : MonoBehaviour
+    public class Teacher_Player : MonoBehaviour
     {
         Rigidbody thisRB;
         public float speed = 0.2f;

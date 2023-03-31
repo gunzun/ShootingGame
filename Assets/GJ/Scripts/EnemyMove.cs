@@ -20,7 +20,7 @@ namespace GJ
             GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
             GetComponent<Rigidbody>().velocity = transform.forward * speed;
 
-            gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+            // gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         }
 
         void Update()
