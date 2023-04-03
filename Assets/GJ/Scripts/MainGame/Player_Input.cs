@@ -7,7 +7,7 @@ public class Player_Input : MonoBehaviour
     public string moveAxisName = "Vertical";                // 앞뒤 움직임을 위한 입력축 이름
     public string leftAxisName = "Horizontal";              // 좌우 움직임을 위한 입력축 이름
     public string fireBtn = "Fire1";                        // 발사를 위한 입력 버튼 이름
-    public string skillBtn = "Fire2";                       // 스킬 사용을 위한 입력 버튼 이름
+    public string skillBtn = "Skill";                       // 스킬 사용을 위한 입력 버튼 이름
 
     #region Property
     public float forwardMove { get; set; }

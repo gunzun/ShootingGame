@@ -22,7 +22,6 @@ namespace GJ
                 PlayerDie();                        // 플레이어 체력이 0보다 떨어지면 PlayerDie 함수 호출
             }
         }
-
         private void PlayerMove()
         {
             // player의 왼쪽 오른쪽 이동
@@ -42,7 +41,6 @@ namespace GJ
             Vector3 WorldPos = Camera.main.ViewportToWorldPoint(viewPos);
             transform.position = WorldPos;
         }
-
         private void PlayerDie()
         {
             Player_Stat.Instance.IsDie = true;                         // 플레이어를 사망처리한다.
@@ -50,6 +48,5 @@ namespace GJ
 
             Destroy(gameObject);        // 테스트
         }
-
     }
 }

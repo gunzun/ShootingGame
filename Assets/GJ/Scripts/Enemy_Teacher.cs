@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy_Teacher : MonoBehaviour
 {
     float timer = 0;
     public float creatBulletTime = 2.0f;

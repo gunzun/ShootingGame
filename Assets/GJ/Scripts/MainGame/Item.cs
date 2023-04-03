@@ -40,7 +40,7 @@ namespace GJ
                     default:
                         break;
                 }
-                Destroy(gameObject);
+               Destroy(gameObject);
             }
             // 충분히 떨어져서 DeadZone과 충돌했을 때
             else if (other.CompareTag("Deadzone"))

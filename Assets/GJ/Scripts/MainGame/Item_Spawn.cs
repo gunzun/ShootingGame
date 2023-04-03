@@ -111,7 +111,6 @@ namespace GJ
             {
                 // 40% È®·ü·Î »ý¼º
                 m_type = ITEM_TYPE.NONE;
-                Debug.Log("Item : NONE!");
             }
             else if(randomNum <= 100)
             {

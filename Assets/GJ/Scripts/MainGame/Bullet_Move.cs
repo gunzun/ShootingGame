@@ -11,7 +11,6 @@ namespace GJ
         void Update()
         {
             transform.position += Vector3.up * Time.deltaTime * speed;
-            Destroy(gameObject, 3.0f);
         }
     }
 }

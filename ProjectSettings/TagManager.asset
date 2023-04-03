@@ -8,6 +8,8 @@ TagManager:
   - GameManager
   - Bullet
   - Deadzone
+  - Item
+  - Spawner
   layers:
   - Default
   - TransparentFX

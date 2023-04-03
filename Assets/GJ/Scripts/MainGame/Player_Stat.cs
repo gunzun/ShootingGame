@@ -20,7 +20,7 @@ namespace GJ
         private float m_playerSpeed;                        // 플레이어 공격 속도를 set 으로 받을 변수
         private int playerAttPower;                         // 플레이어 공격 파워
         private int numberOfBombs;                          // 플레이어가 가진 폭탄의 개수
-        private bool m_isDie;                               // 플레이어가 죽었는지 확인하는 bool 값      
+        private bool m_isDie;                               // 플레이어가 죽었는지 확인하는 bool 값
 
 
         #region #Property
@@ -68,15 +68,6 @@ namespace GJ
             playerAttPower = 1;
             numberOfBombs = 3;
             m_isDie = false;
-        }
-
-        private void Update()
-        {
-            count += Time.deltaTime;
-            if (count >= 1.0f)
-            {
-                Debug.Log(playerAttSpeed);
-            }
         }
     }
 }
