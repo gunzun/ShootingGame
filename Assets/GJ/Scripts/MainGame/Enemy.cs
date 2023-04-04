@@ -18,10 +18,13 @@ namespace GJ
         private int snowballPrefabAmount = 6;               // 눈덩이 프리팹의 개수
         private float snowballPercentage;                   // 눈덩이의 개수를 백분율로 나타낸 값 중 최솟값
         private float[] snowballPercentages;                // 눈덩이의 개수를 백분율로 나타낸 모든 값을 받는 배열
-        private bool isSnowballRolling = false;             // 눈덩이가 굴러갔는가?
-        private float snowballDestroyCount = 3.0f;          // 눈덩이가 파괴되기까지의 카운트
+        private float snowballDestroyCount = 4.0f;          // 눈덩이가 파괴되기까지의 카운트
+        [SerializeField]
+        protected bool IsSnowballRolling = false;           // 눈덩이를 굴릴것인가?
 
-        protected GameObject player;       // 가져올 플레이어 오브젝트
+        protected GameObject player;        // 가져올 플레이어 오브젝트
+        Player_Attack playerAttack;         // 가져올 플레이어어택 클래스
+        private Coroutine coroutine;        // 코루틴을 담을 변수
 
         #region #Property
         protected float EnemyHp { get => enemyHp; set => enemyHp = value; }
@@ -32,35 +35,41 @@ namespace GJ
 
         protected virtual void Start()
         {
-            player = GameObject.FindGameObjectWithTag("Player");            // 플레이어 오브젝트를 가져오고
+            player = GameObject.FindGameObjectWithTag("Player");            // 플레이어 오브젝트를 찾고
+            playerAttack = player.GetComponent<Player_Attack>();            // 플레이어어택 클래스를 받는다.
+
             enemyHpOrigin = enemyHp;                                        // enemyHpOrigin을 초기 체력으로 초기화
             snowballPercentages = new float[snowballPrefabAmount];          // 스노우볼 배열을 프리팹 개수만큼 초기화
-            // 스노우볼 프리팹을 백분율로 나타내기 위해 초기화
+            #region # 스노우볼 프리팹을 백분율로 나타내기 위해 초기화
             snowballPercentage = 100 / snowballPrefabAmount;                // 스노우볼 프리팹 중 최솟값
             for (int i = 0; i < snowballPrefabAmount; i++)
             {
                 snowballPercentages[i] = snowballPercentage * (i + 1);      // 전체 스노우볼 프리팹을 백분율로 나타낸 값들
             }
+            #endregion
         }
         private void Update()
         {
             EnemyMove();
-
+            // isDie가 true가 될 때 에너미 파괴
+            if (isDie)
+            {
+                Destroy(gameObject);
+            }
             // 플레이어가 스킬을 사용했다면
             if (player.GetComponent<Player_Attack>().PlayerSkilled == true)
             {
-                isSnowballRolling = true;                   // 눈덩이를 굴릴 수 있도록 isSnowballRolling 을 true로 한다.
+                IsSnowballRolling = true;                                       // SnowballIsRolling은 true
+                player.GetComponent<Player_Attack>().PlayerSkilled = false;     // 다음 눈덩이가 굴러가지 않도록 PlayerSkilled를 false로 만든다.
+                if (coroutine != null)
+                {
+                    StopCoroutine(coroutine);                   // 눈덩이를 파괴하지 않고
+                }
             }
-            // isSnowball이 true가 될 때
-            if (isSnowball == true)
+            // snowballIsRolling이라면
+            if (IsSnowballRolling)                          
             {
-                EnemySpeed = 0.0f;                          // 에너미의 속도를 없애고
-                StartCoroutine("EnemyDie");                 // 눈덩이는 3초 있다가 파괴된다.
-            }
-            // isDie가 true가 될 때
-            else if (isDie)
-            {
-                Destroy(gameObject);                        // 자신인 에너미 오브젝트를 파괴한다.
+                SnowballRolling();                          // 눈덩이가 앞으로 굴러간다.
             }
         }
         private void OnTriggerEnter(Collider other)
@@ -91,8 +100,11 @@ namespace GJ
             {
                 // 뒤에 나온 에너미가 가려지는 것을 대비해 에너미 위치를 뒤로 이동시킨다.
                 transform.position = new Vector3(transform.position.x, transform.position.y, 0.6f);
-
-                if (isSnowballRolling == true)                  // isSnowballRolling이 true이고
+                if (other.tag == "Player")
+                {
+                    
+                }
+                if (IsSnowballRolling == true)                  // snowballIsRolling이 true이고
                 {
                     if (other.CompareTag("Enemy"))              // 다른 에너미와 충돌할 때
                     {
@@ -100,7 +112,7 @@ namespace GJ
                     }
                     else if (other.CompareTag("Spawner"))       // 스포너와 충돌할 때
                     {
-                        Destroy(gameObject);                    // 자신을 파괴한다.
+                        isDie = true;                           // 자신을 파괴한다.
                     }
                     else
                     {
@@ -108,11 +120,14 @@ namespace GJ
                     }
                 }
             }
-        }      // 다른 오브젝트와 충돌할 때
+        }
         private void EnemyMove()
         {
             transform.position += Vector3.down * EnemySpeed * Time.deltaTime;
-        }                         // 에너미가 움직인다.
+        }                         
+        /// <summary>
+        /// 에너미와 플레이어가 충돌할 때 처리할 함수
+        /// </summary>
         private void EnemyCollidesPlayer()
         {
             Player_Stat.Instance.Hp -= 1;           // 플레이어 체력을 하나 뺀다.
@@ -122,12 +137,19 @@ namespace GJ
             }
             isDie = true;                           // isDie를 true로 바꾼다.
                                                     // 자신은 터지는 이펙트를 준 이후
-
-        }               // 에너미와 플레이어가 충돌할 때 처리할 함수
+        }
+        /// <summary>
+        /// 에너미와 총알이 충돌할 때 처리할 함수
+        /// </summary>
         private void EnemyCollidesBullet()
         {
-            enemyHp -= 1;                                   // 에너미 자신에게 대미지를 주고
-            #region Delay
+            enemyHp -= 1;   // 에너미 자신에게 대미지를 주고
+            if (enemyHp <= 0)                               // 에너미의 체력이 0보다 적으면 isSnowball = true
+            {
+                isSnowball = true;
+                // coroutine = StartCoroutine(EnemyDie());  // 눈덩이는 3초 있다가 파괴된다.
+            }
+            #region # 맞을 때마다 체력에 비례해 에너미의 속도에 딜레이를 준다
             if (enemySpeed > delayValeue)                   // 속도가 있다면 속도를 줄이고
             {
                 enemySpeed -= delayValeue;
@@ -136,12 +158,10 @@ namespace GJ
             {
                 enemySpeed = 0f;
             }
-            #endregion
-            // 적의 Hp값을 눈덩이 프리팹 개수만큼의 백분율로 나타내기 위한 값
+            #endregion                                          //                                           // 적의 Hp값을 눈덩이 프리팹 개수만큼의 백분율로 나타내기 위한 값    
+            #region # 에너미의 체력을 퍼센티지로 변환한다
             hpPercentage = (enemyHp / enemyHpOrigin) * 100.0f;
-
-            // 총알에 맞을 때마다 에너미가 눈덩이에 쌓인다.
-            #region hpPercentage 값이 0 ~ 100이 아닐 경우
+            // hpPercentage 값이 0 ~ 100이 아닐 경우
             if (hpPercentage >= 100)
             {
                 Debug.LogWarning("Hp Percentage가 100이 넘어요");
@@ -153,36 +173,31 @@ namespace GJ
                 hpPercentage = 0;
             }
             #endregion
-            // 에너미의 HpPercentage가 눈덩이의 Percentage 보다 낮아지면 거기에 따른 눈덩이 프리팹을 활성화 한다.
-            for (int i = snowballPrefabAmount - 1; i >= 0; i--)
+            #region # 에너미가 데미지를 입을 때마다 눈덩이 활성화한다
+            for (int i = snowballPrefabAmount - 1; i >= 0; i--)     // snowballPrefab의 개수가 6이라면 i = 5 ~ 0 의 범위로 반복된다.
             {
-                if (hpPercentage <= snowballPercentages[i])
+                if (hpPercentage <= snowballPercentages[i])             // 불릿에 충돌 후 Hp 퍼센티지가 snowball의 퍼센티지보다 작아질 경우
                 {
-                    transform.GetChild(snowballPrefabAmount - i - 1).gameObject.SetActive(true);
+                    transform.GetChild(snowballPrefabAmount - i - 1).gameObject.SetActive(true);    // 자식을 0부터 5까지 활성화한다.
                 }
             }
-            // 피격 애니메이션을 주고
-            if (enemyHp <= 0 && isSnowball == false)        // 만약 에너미 체력이 없다면 눈사람으로 만든다.
-            {
-                isSnowball = true;
-            }
-        }               // 에너미와 총알이 충돌할 때 처리할 함수
+            #endregion
+            
+        }
+        /// <summary>
+        /// 에너미가 눈덩이일 때 위로 굴러간다
+        /// </summary>
         private void SnowballRolling()
         {
-            transform.position += Vector3.up * Player_Stat.Instance.AttackPower * Time.deltaTime;
-        }                   // 에너미가 눈덩이일 때 위로 굴러간다
-        private IEnumerator EnemyDie()
+            transform.position += Vector3.up * Player_Stat.Instance.AttackPower * 3.0f * Time.deltaTime;
+        }
+
+        // 22.4/4_GJ : 눈덩이를 코루틴으로 딜레이 준 후 파괴하는 코드에서 Update에서 카운트 주는 것으로 변경
+        /*private IEnumerator EnemyDie()
         {
-            if (isSnowballRolling == false)
-            {
-                yield return new WaitForSeconds(snowballDestroyCount);
-                isDie = true;
-            }
-            else
-            {
-                SnowballRolling();                          // 파괴되지 않았다면 앞으로 굴러간다.
-                yield break;
-            }
-        }                   // 에너미가 굴러가지 않는다면 지정된 시간 이후 파괴한다.
+            EnemySpeed = 0.0f;                              // 에너미의 속도를 없애고
+            yield return new WaitForSeconds(snowballDestroyCount);
+            isDie = true;
+        }*/                   // 지정된 시간 이후 파괴한다.
     }
 }

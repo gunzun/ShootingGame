@@ -10,8 +10,8 @@ namespace GJ
         public GameObject Snowball;             // 눈덩이 프리팹
 
         private float count;                    // 공격 사이 카운트
-        private bool isSkill = false;           // 스킬을 사용했나?
-        public bool PlayerSkilled { get => isSkill; }
+        private bool isSkill = false;    // 스킬을 사용했나?
+        public bool PlayerSkilled { get => isSkill; set => isSkill = value; }
 
         void Update()
         {
@@ -21,20 +21,15 @@ namespace GJ
                 Fire();                                                                 // 함수 실행
                 count = 0.0f;                                                           // 총알 발사 후 카운트를 0으로 리셋한다.
             }
-            if (playerInput.skill == true)
-            {
-                Debug.Log("스킬 발동!");
-            }
         }
         private void Fire()
         {
             // 플레이어 위에 총알 프리팹 생성
-            Instantiate(Bullet.transform , this.transform.position + new Vector3(0f, 0.5f, 0f), this.transform.rotation);
+            Instantiate(Bullet.transform, this.transform.position + new Vector3(0f, 0.5f, 0f), this.transform.rotation);
         }               // 플레이어가 총알을 발사한다.
-
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
-            if (playerInput.skill == true && other.CompareTag("Enemy"))
+            if (playerInput.skill && other.CompareTag("Snowball"))
             {
                 isSkill = true;
             }
