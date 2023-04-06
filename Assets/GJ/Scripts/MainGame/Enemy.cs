@@ -39,6 +39,7 @@ namespace GJ
         {
             player = GameObject.FindGameObjectWithTag("Player");            // 플레이어 오브젝트를 찾고
             playerAttack = player.GetComponent<Player_Attack>();            // 플레이어어택 클래스를 받는다.
+            this.GetComponent<SpriteRenderer>().sortingOrder = 8;           // 적이 총알에 맞기 전까진 화면 맨 위에 있다.
             isPlayerSkilled = playerAttack.PlayerSkilled;                   // 플레이어가 스킬을 썼는지 받아온다.
 
             enemyHpOrigin = enemyHp;                                        // enemyHpOrigin을 초기 체력으로 초기화
@@ -61,7 +62,7 @@ namespace GJ
             if (isSnowball)
             {
 
-                // coroutine = StartCoroutine(EnemyDie());                         // EnemyDie()를 실행시키고, 그걸 coroutine 변수에 넣어준다.
+                coroutine = StartCoroutine(EnemyDie());                         // EnemyDie()를 실행시키고, 그걸 coroutine 변수에 넣어준다.
             }                                                              // isSnowball이 true가 될 때 에너미 속도를 없애고, 약간 뒤로 배치한다.
             if (player.GetComponent<Player_Attack>().PlayerSkilled == true && isSnowball)   // 플레이어가 스킬을 사용했다면
             {
@@ -139,12 +140,13 @@ namespace GJ
         private void EnemyCollidesBullet()
         {
             enemyHp -= 1;                                   // 에너미 자신에게 대미지를 주고
+            this.GetComponent<SpriteRenderer>().sortingOrder = 0;
             if (enemyHp <= 0)                               // 에너미의 체력이 0보다 적으면
             {
-                this.GetComponent<SpriteRenderer>().sortingOrder = -snowballPrefabAmount;
+                this.GetComponent<SpriteRenderer>().sortingOrder = -snowballPrefabAmount;       // 다른 적이 가리지 않도록 레이어를 바꿔준다.
                 for (int i = snowballPrefabAmount - 1; i >= 0; --i)
                 {
-                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = i - snowballPrefabAmount;
+                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = i - snowballPrefabAmount;       // 눈덩이들도 레이어를 바꿔준다.
                 }
                 enemySpeed = 0.0f;
                 isSnowball = true;
@@ -195,11 +197,11 @@ namespace GJ
         }
 
         // 22.4/4_GJ : 눈덩이를 코루틴으로 딜레이 준 후 파괴하는 코드에서 Update에서 카운트 주는 것으로 변경
-        /*private IEnumerator EnemyDie()
+        private IEnumerator EnemyDie()
         {
             EnemySpeed = 0.0f;                              // 에너미의 속도를 없애고
             yield return new WaitForSeconds(snowballDestroyCount);
             isDie = true;
-        }*/                   // 지정된 시간 이후 파괴한다.
+        }                   // 지정된 시간 이후 파괴한다.
     }
 }

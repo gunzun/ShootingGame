@@ -9,8 +9,8 @@ namespace GJ
         // 싱글톤으로 선언
         #region #Singleton
         private Player_Stat() { }
-        private static Player_Stat instance;
-        public static Player_Stat Instance { get => instance; }
+        private static Player_Stat _instance;
+        public static Player_Stat Instance { get => _instance; }
         #endregion
 
         private float playerSpeed = 5.0f;                   // 플레이어 이동 속도
@@ -48,12 +48,13 @@ namespace GJ
         #endregion
 
         float count;
-        void Start()
+        void Awake()
         {
             #region #Singleton
-            if (instance == null)
+            if (_instance == null)
             {
-                instance = this;
+                _instance = this;
+                DontDestroyOnLoad(this.gameObject);
             }
             else
             {

@@ -7,8 +7,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace GJ
-{
     public class GameManager : MonoBehaviour
     {
         public GameObject[] Enemies;
@@ -83,4 +81,3 @@ namespace GJ
         
 
     }
-}

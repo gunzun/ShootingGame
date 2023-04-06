@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GJ
-{
     public class EnemyMove : MonoBehaviour
     {
         public GameObject explosion;
@@ -47,5 +45,3 @@ namespace GJ
             Destroy(gameObject);
         }
     }
-
-}
