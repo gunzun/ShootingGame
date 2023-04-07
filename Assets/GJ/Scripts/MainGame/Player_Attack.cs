@@ -23,12 +23,19 @@ namespace GJ
                 count = 0.0f;                                                           // 총알 발사 후 카운트를 0으로 리셋한다.
             }
             isSkill = playerInput.skill;                                                // 스페이스 바를 누를 때 isSkill를 true로 반환한다.
+            
         }
         private void Fire()
         {
             // 플레이어 위에 총알 프리팹 생성
             Instantiate(Bullet.transform, this.transform.position + new Vector3(0f, 0.5f, 0f), this.transform.rotation);
         }               // 플레이어가 총알을 발사한다.
+
+        private void Skill()
+        {
+
+        }           // 플레이어가 스킬을 사용한다.
+
 
         // 23.4/4_GJ : 스페이스바 누를 시 처음엔 PlayerSkilled가 true가 됐는데 Enemy에서 false로 처리한 이후부터는 변화가 없어서 그냥 스페이스바 눌렀는지만 Enemy에 전해주기로 함
         /*private void OnTriggerStay(Collider other)

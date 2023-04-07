@@ -29,7 +29,7 @@ namespace GJ
                         Player_Stat.Instance.Hp += 1;
                         break;
                     case ITEM_TYPE.ATTACKSPEED:
-                        Player_Stat.Instance.AttackSpeed = 1.0f;
+                        Player_Stat.Instance.AttackSpeed += 1.0f;
                         break;
                     case ITEM_TYPE.ATTACKPOWER:
                         Player_Stat.Instance.AttackPower += 1;

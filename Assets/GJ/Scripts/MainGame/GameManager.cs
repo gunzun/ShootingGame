@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
+using Unity.VisualScripting.YamlDotNet.Core;
+using UnityEditorInternal;
 
 namespace GJ
 {
     public class GameManager : MonoBehaviour
     {
         private GameManager() { }
-
         private static GameManager _instance = null;
         public static GameManager Instance
         {
@@ -23,6 +25,8 @@ namespace GJ
                 return _instance;
             }
         }
+
+        private Scene PlayScene;                    // 플레이씬을 받을 변수
 
         private void Awake()
         {
@@ -42,7 +46,10 @@ namespace GJ
 
         void Update()
         {
-
+            if (SceneManager.GetActiveScene() == PlayScene)         // 플레이씬이 켜진 상태일 때
+            {
+                
+            }
         }
         public void GameOver()
         {
@@ -52,6 +59,7 @@ namespace GJ
         {
             // SceneManager.LoadScene(1);
             LoadingScene.LoadScene("Play");
+            PlayScene = SceneManager.GetActiveScene();
         }
         public void OnBtn_Ranking()
         {

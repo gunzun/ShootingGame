@@ -43,9 +43,11 @@ namespace GJ
         }
         private void PlayerDie()
         {
-            Player_Stat.Instance.IsDie = true;                         // 플레이어를 사망처리한다.
+            Player_Stat.Instance.IsDie = true;                                  // 플레이어를 사망처리한다.
+            Player_Stat.Instance.MaxScore = Player_Stat.Instance.CurrentScore;  // 최고 기록을 현재 기록으로 덮어쓴다.
             // 죽는 애니메이션을 재생한다.
-
+            // 데이터를 저장한다.
+            GameDataManager.Instance.SaveData("유저1", 100.0f, Player_Stat.Instance.CurrentScore);
             Destroy(gameObject);        // 테스트
         }
     }
