@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0c291001d96c60c4cb56befc44b79424, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1430,6 +1430,7 @@ GameObject:
   - component: {fileID: 1673698515}
   - component: {fileID: 1673698514}
   - component: {fileID: 1673698513}
+  - component: {fileID: 1673698516}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -1449,6 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a51ff6504a4ad44785642ed9c0b64dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHp: 0
 --- !u!114 &1673698514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,7 +1460,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673698512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b7732c8eb98004eb2cf308bec68647, type: 3}
+  m_Script: {fileID: 11500000, guid: f7eff5e9b21037447b9c2a0de5a31664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1673698515
@@ -1476,6 +1478,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673698516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673698512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa98eab7af07fbe4ea1390a34b74dc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: GameData.json
+  gameDatas: []
+  gameDataGroup:
+    rank: []
+  isMusic: 0
+  isSound: 0
+  gameTime: 0
+  gameScore: 0
 --- !u!1 &1744761363
 GameObject:
   m_ObjectHideFlags: 0

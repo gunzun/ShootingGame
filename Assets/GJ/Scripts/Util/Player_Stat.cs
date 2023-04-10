@@ -16,8 +16,9 @@ namespace GJ
         private float playerSpeed = 5.0f;                   // 플레이어 이동 속도
         private float playerSpeedMax = 10.0f;               // 플레이어 최대 이동 속도
         // public float rotateSpd = 180.0f;
+        [SerializeField]
         private int playerHp;                               // 플레이어 체력
-        private int playerHpMax = 5;                        // 플레이어 최대 체력
+        private int playerHpMax = 3;                        // 플레이어 최대 체력
         private float playerAttSpeed;                       // 플레이어 공격 속도
         private float playerAttSpeedMax = 0.08f;            // 플레이어 최대 공격 속도
         private int playerAttPower;                         // 플레이어 공격 파워
@@ -27,6 +28,7 @@ namespace GJ
         private bool m_isDie;                               // 플레이어가 죽었는지 확인하는 bool 값
         private int currentScore = 0;                       // 플레이어의 현재 점수
         private int maxScore;                               // 플레이어의 최대 점수
+        private float playTime;                             // 플레이씬 플레이타임
 
         // UI용
         private bool isHpUp = false;                        // 플레이어 Hp가 늘었나?
@@ -41,7 +43,7 @@ namespace GJ
             }
             set
             {
-                if (value >= playerHpMax)           // 들어온 값이 HpMax보다 크다면
+                if (value > playerHpMax)            // 들어온 값이 HpMax보다 크다면
                 {
                     value = playerHpMax;            // 들어온 값을 HpMax로 바꾼다.
                 }
@@ -131,6 +133,7 @@ namespace GJ
         public bool IsHpDown { get => isHpDown; set => isHpDown = value; }
         public int CurrentScore { get => currentScore; set => currentScore = value; }
         public int MaxScore { get => maxScore; set => maxScore = value; }
+        public float PlayTime { get => playTime; set => playTime = value; }
         #endregion
 
         float count;
@@ -150,7 +153,7 @@ namespace GJ
             }
             #endregion
 
-            playerHp = 5;
+            playerHp = 3;
             playerAttSpeed = 0.5f;
             playerAttPower = 1;
             numberOfBombs = 3;

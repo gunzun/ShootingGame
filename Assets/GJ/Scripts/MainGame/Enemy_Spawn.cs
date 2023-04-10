@@ -27,7 +27,7 @@ namespace GJ
         void Update()
         {
             count += Time.deltaTime;                            // 카운트가 스폰타임보다 커지면
-            if (count >= spawnTime)
+            if (count >= spawnTime && !Player_Stat.Instance.IsDie)
             {
                 RandomizeType();                                // 생성될 에너미 타입을 랜덤하게 업데이트
                 EnemyPos_x = SpawnPositionRandomization();      // 스폰위치를 랜덤하게 업데이트

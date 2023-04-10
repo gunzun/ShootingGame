@@ -131,10 +131,6 @@ namespace GJ
         private void EnemyCollidesPlayer()
         {
             Player_Stat.Instance.Hp -= 1;           // 플레이어 체력을 하나 뺀다.
-            if (m_type == ENEMY_TYPE.ENEMY3)        // 만약 에너미의 타입이 ENEMY3 라면
-            {
-                Player_Stat.Instance.Hp -= 1;       // 플레이어 체력을 하나 더 깐다.
-            }
             isDie = true;                           // isDie를 true로 바꾼다.
                                                     // 자신은 터지는 이펙트를 준 이후
         }

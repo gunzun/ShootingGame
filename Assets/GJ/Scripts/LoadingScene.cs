@@ -16,9 +16,10 @@ namespace GJ
         /// 로딩씬에서 다음 씬으로 넘어가는 메소드 
         /// </summary>
         /// <param name="_sceneName">다음 씬의 이름을 string으로 입력하세요.</param>
-        public static void LoadScene(string _sceneName)
+        public static void LoadScene(/*string _sceneName*/)
         {
-            nextScene = _sceneName;
+            // nextScene = _sceneName;
+            // 로딩 이후 플레이씬 실행
             SceneManager.LoadScene(1);
         }
         void Start()

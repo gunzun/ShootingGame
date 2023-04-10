@@ -36,7 +36,7 @@ namespace GJ
         void Update()
         {
             count += Time.deltaTime;                                    // 카운트가 차면 아이템 생성
-            if (count >= spawnTime)
+            if (count >= spawnTime && !Player_Stat.Instance.IsDie)
             {
                 m_type = ITEM_TYPE.NONE;                                // 아이템을 NONE으로 초기화 한 후에
                 RandomizeType();                                        // 랜덤한 아이템 타입으로 바꾼다.

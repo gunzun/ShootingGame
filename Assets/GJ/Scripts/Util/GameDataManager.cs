@@ -25,11 +25,10 @@ namespace GJ
         /// 게임의 데이터 파일을 Json으로 저장
         /// </summary>
         /// <param name="_gameData"></param>
-        public void SaveData(GameDataGroup _gameData)
+        private void SaveData(GameDataGroup _gameData)
         {
             Debug.Log(path);
             string toJsonData = JsonUtility.ToJson(_gameData, true);
-            Debug.Log(toJsonData);
             File.WriteAllText(path, toJsonData);
             gameTime = 0;
         }
@@ -59,23 +58,19 @@ namespace GJ
         {
             gameDatas.Add(CreateGameData(_id, _stageTime, _Score));
             gameDataGroup.rank = gameDatas.ToArray();
+            SaveData(gameDataGroup);
         }
         void Start()
         {
             path = Application.dataPath + "/" + fileName;       // Json 파일 저장 경로
-
-            SaveData("11", 10000.0f, 10000);
-
-            LoadData();
-            
+            LoadData();                                         // 미리 있던 파일을 저장
         }
-
         public void LoadData()
         {
             Debug.Log("load");
 
             // path파일이 존재한다면
-            if (File.Exists(path))                              
+            if (File.Exists(path))
             {
                 string jsonData = File.ReadAllText(path);
                 gameDataGroup = JsonUtility.FromJson<GameDataGroup>(jsonData);

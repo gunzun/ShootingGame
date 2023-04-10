@@ -13,10 +13,15 @@ namespace GJ
         private float playerForwardAxis;            // 플레이어 인풋에 따른 전 후방 축
         private float playerLeftAxis;               // 플레이어 인풋에 따른 좌 우방 축
 
+        private float _playTime;                    // 플레이타임
+
         void Update()
         {
             PlayerMove();
-
+            if (!Player_Stat.Instance.IsDie)
+            {
+                _playTime += Time.deltaTime;
+            }
             if (Player_Stat.Instance.Hp <= 0)
             {
                 PlayerDie();                        // 플레이어 체력이 0보다 떨어지면 PlayerDie 함수 호출
@@ -45,10 +50,12 @@ namespace GJ
         {
             Player_Stat.Instance.IsDie = true;                                  // 플레이어를 사망처리한다.
             Player_Stat.Instance.MaxScore = Player_Stat.Instance.CurrentScore;  // 최고 기록을 현재 기록으로 덮어쓴다.
+            Player_Stat.Instance.PlayTime = _playTime;                          // 플레이 타임을 보낸다.
             // 죽는 애니메이션을 재생한다.
             // 데이터를 저장한다.
             GameDataManager.Instance.SaveData("유저1", 100.0f, Player_Stat.Instance.CurrentScore);
             Destroy(gameObject);        // 테스트
+            GameManager.Instance.GameOver();
         }
     }
 }
