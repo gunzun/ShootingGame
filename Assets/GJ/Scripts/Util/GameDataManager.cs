@@ -13,8 +13,9 @@ namespace GJ
         public string fileName = "GameData.json";
         string path;
         // public GameData gameData = new GameData();
-        public List<GameData> gameDatas = new List<GameData>();
+        public List<GameData> gameDatas = new List<GameData>();         // 데이터를 로드할 때 가져갈 변수
         public GameDataGroup gameDataGroup = new GameDataGroup();
+        public int gameDatasAmount = 0;                                 // 로드한 데이터의 배열 개수
 
         public int isMusic = 0;
         public int isSound = 0;
@@ -76,6 +77,7 @@ namespace GJ
                 gameDataGroup = JsonUtility.FromJson<GameDataGroup>(jsonData);
                 for (int i = 0; i < gameDataGroup.rank.Length; i++)
                 {
+                    gameDatasAmount += 1;
                     gameDatas.Add(gameDataGroup.rank[i]);
                 }
             }

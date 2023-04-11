@@ -6,19 +6,9 @@ namespace GJ
 {
     public class Opening : MonoBehaviour
     {
-        void Start()
-        {
-        
-        }
-
-        void Update()
-        {
-        
-        }
-
         public void OnEnterNextScene()
         {
-            GameManager.Instance
+            GameManager.Instance.EnterStartSceneViaLoadScene();
         }
     }
 }

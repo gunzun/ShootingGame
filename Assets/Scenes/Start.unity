@@ -258,6 +258,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438340710}
   m_CullTransparentMesh: 1
+--- !u!1 &512754467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512754469}
+  - component: {fileID: 512754468}
+  m_Layer: 0
+  m_Name: GameManagerInstance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &512754468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512754467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0392472bcb9156f4584fa8d2a1d45f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
+--- !u!4 &512754469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512754467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -164.82635, y: 768.86304, z: 3.9339924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &591748909
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,10 +673,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673698514}
-        m_TargetAssemblyTypeName: GJ.GameManager, GJ_namespace
-        m_MethodName: OnBtn_Ranking
-        m_Mode: 1
+      - m_Target: {fileID: 11500000, guid: f7eff5e9b21037447b9c2a0de5a31664, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -762,7 +807,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673698514}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GJ.GameManager, GJ_namespace
         m_MethodName: OnBtn_Exit
         m_Mode: 1
@@ -1369,7 +1414,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673698514}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GJ.GameManager, GJ_namespace
         m_MethodName: OnBtn_Ranking
         m_Mode: 1
@@ -1419,85 +1464,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666271768}
   m_CullTransparentMesh: 1
---- !u!1 &1673698512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1673698515}
-  - component: {fileID: 1673698514}
-  - component: {fileID: 1673698513}
-  - component: {fileID: 1673698516}
-  m_Layer: 0
-  m_Name: GameManger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1673698513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673698512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a51ff6504a4ad44785642ed9c0b64dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHp: 0
---- !u!114 &1673698514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673698512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7eff5e9b21037447b9c2a0de5a31664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1673698515
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673698512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.66142, y: 259.79086, z: 5.694229}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1673698516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673698512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa98eab7af07fbe4ea1390a34b74dc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fileName: GameData.json
-  gameDatas: []
-  gameDataGroup:
-    rank: []
-  isMusic: 0
-  isSound: 0
-  gameTime: 0
-  gameScore: 0
 --- !u!1 &1744761363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1727,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673698514}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GJ.GameManager, GJ_namespace
         m_MethodName: OnBtn_GameStart
         m_Mode: 1
@@ -1772,7 +1738,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &2050402326
 MonoBehaviour:
   m_ObjectHideFlags: 0

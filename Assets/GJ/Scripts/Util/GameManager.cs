@@ -9,7 +9,9 @@ using UnityEditorInternal;
 
 namespace GJ
 {
-    public class GameManager : MonoBehaviour
+    // [CreateAssetMenu(fileName ="GameManager",menuName ="ScriptableObjects/GameManager", order = 1)]
+    [System.Serializable]
+    internal class GameManager : MonoBehaviour
     {
         public enum SceneType : int // ??????
         {
@@ -63,6 +65,11 @@ namespace GJ
 
             }
         }
+
+        public void EnterStartSceneViaLoadScene()
+        {
+            SceneManager.LoadScene((int)SceneType.Start);
+        }
         public void GameOver()
         {
             SceneManager.LoadScene((int)SceneType.Gameover);
@@ -99,14 +106,12 @@ namespace GJ
         /// <summary>
         /// 버틴 시간을 분이랑 초로 구분하여 문자열로 반환한다.
         /// </summary>
-        public string PlayTimeToString(/*out int minute, out int second*/)
+        public string PlayTimeToString(float m_time)
         {
-            float playTime = Player_Stat.Instance.PlayTime;
             int minute = 0;
             int second = 0;
-            minute = (int)(playTime / 60);
-            second = (int)(playTime % 60);
-
+            minute = (int)(m_time / 60);
+            second = (int)(m_time % 60);
             return string.Format("{0:D2}:{1:D2}", minute, second);
             // timeText.text = minute + ":" + second;
         }

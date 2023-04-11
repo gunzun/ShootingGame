@@ -18,9 +18,6 @@ namespace GJ
         private bool scoreAnimisEnd = false;    // 점수 올리는 애니메이션이 끝났나?
 
         private float playTime;                 // 플레이 타임
-        private int minute = 0;                 // 플레이 타임 중 '분' 에 해당
-        private int second = 0;                 // 플레이 타임 중 '초' 에 해당
-        
 
         void Start()
         {
@@ -28,7 +25,8 @@ namespace GJ
             score = Player_Stat.Instance.CurrentScore;
 
             // 시간 확인
-            timeText.text = GameManager.Instance.PlayTimeToString();
+            playTime = Player_Stat.Instance.PlayTime;
+            timeText.text = GameManager.Instance.PlayTimeToString(playTime);
         }
         void Update()
         {
