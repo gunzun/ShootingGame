@@ -11,7 +11,7 @@ namespace GJ
         /// </summary>
         public void PrevBtnClick()
         {
-            GameManager.Instance.Restart();
+            GameManager.Instance.EnterStartScene();
         }
     }
 }

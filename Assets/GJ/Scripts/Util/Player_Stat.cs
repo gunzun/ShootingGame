@@ -29,6 +29,7 @@ namespace GJ
         private int currentScore = 0;                       // 플레이어의 현재 점수
         private int maxScore;                               // 플레이어의 최대 점수
         private float playTime;                             // 플레이씬 플레이타임
+        public string userName { get; set; } = "User1";
 
         // UI용
         private bool isHpUp = false;                        // 플레이어 Hp가 늘었나?
@@ -136,7 +137,6 @@ namespace GJ
         public float PlayTime { get => playTime; set => playTime = value; }
         #endregion
 
-        float count;
         void Awake()
         {
             #region #Singleton
@@ -153,6 +153,13 @@ namespace GJ
             }
             #endregion
 
+            SetPlayerStat();
+        }
+        /// <summary>
+        /// 플레이어 스탯 초기화
+        /// </summary>
+        public void SetPlayerStat()
+        {
             playerHp = 3;
             playerAttSpeed = 0.5f;
             playerAttPower = 1;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using System.IO;
@@ -15,7 +16,12 @@ namespace GJ
         // public GameData gameData = new GameData();
         public List<GameData> gameDatas = new List<GameData>();         // 데이터를 로드할 때 가져갈 변수
         public GameDataGroup gameDataGroup = new GameDataGroup();
+        // List<GameData> sortedList;                                      // 데이터를 점수에 따라 내림차순으로 정렬한 리스트
+
         public int gameDatasAmount = 0;                                 // 로드한 데이터의 배열 개수
+        public GameData bestScoreData;                                  // 최고 점수 데이터
+        public int bestScore = -1;                                      // 데이터 파일에 저장된 최고 점수 데이터 배열의 스코어
+        public string bestScoreUserName;                                // 데이터 파일에 저장된 최고 점수 데이터 배열의 유저 이름
 
         public int isMusic = 0;
         public int isSound = 0;
@@ -65,6 +71,7 @@ namespace GJ
         {
             path = Application.dataPath + "/" + fileName;       // Json 파일 저장 경로
             LoadData();                                         // 미리 있던 파일을 저장
+            SortListInDescendingOrderByScore();                 // 리스트를 스코어를 기준으로 내림차순 정렬
         }
         public void LoadData()
         {
@@ -82,5 +89,43 @@ namespace GJ
                 }
             }
         }
+        /// <summary>
+        /// 점수에 따라 유저 데이터 리스트를 내림차순으로 정렬한다.
+        /// </summary>
+        public void SortListInDescendingOrderByScore()
+        {
+            // Gamedats의 score를 Key하여 기준을 잡고 내림차순으로 정렬한다. Linq 처음써본다
+            List<GameData>newGameDatas = gameDatas.OrderByDescending<GameData, int>(p => p.score).ToList<GameData>();
+            gameDatas = newGameDatas;
+        }
+
+        public bool isFileExist()
+        {
+            if (File.Exists(path))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        // 23.04.13 GJ -> 어차피 리스트 0번째가 최고 점수일건데 최고 점수를 알아야 할 필요가 있나?
+        /*public void BestRecordScore()
+        {
+            if (File.Exists(path))
+            {
+                for (int i = 0; i < gameDataGroup.rank.Length; i++)
+                {
+                    if (gameDatas[i].score > bestScore)
+                    {
+                        bestScoreData = gameDatas[i];
+                    }
+                }
+                bestScoreUserName = bestScoreData.id;
+            }
+        }*/
     }
 }

@@ -53,9 +53,9 @@ namespace GJ
             Player_Stat.Instance.PlayTime = _playTime;                          // 플레이 타임을 보낸다.
             // 죽는 애니메이션을 재생한다.
             // 데이터를 저장한다.
-            GameDataManager.Instance.SaveData("유저1", _playTime, Player_Stat.Instance.CurrentScore);
+            GameDataManager.Instance.SaveData(Player_Stat.Instance.userName, _playTime, Player_Stat.Instance.CurrentScore);
             Destroy(gameObject);        // 테스트
-            GameManager.Instance.GameOver();
+            GameManager.Instance.EnterGameoverScene();
         }
     }
 }

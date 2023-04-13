@@ -13,7 +13,7 @@ namespace GJ
     [System.Serializable]
     internal class GameManager : MonoBehaviour
     {
-        public enum SceneType : int // ??????
+        public enum SceneType// : int // ??????
         {
             Intro,
             Start,
@@ -22,6 +22,7 @@ namespace GJ
             Gameover,
             Ranking,
             Credit,
+            Config
         }
 
         private GameManager() { }
@@ -41,6 +42,7 @@ namespace GJ
 
         private Scene PlayScene;                    // 플레이씬을 받을 변수
 
+        public int GetLoadingSceneNum { get => (int)SceneType.Loading; }
 
         private void Awake()
         {
@@ -66,35 +68,43 @@ namespace GJ
             }
         }
 
-        public void EnterStartSceneViaLoadScene()
+        #region #Scene관련 함수들
+        // ****************** SCENE METHODS ****************** //
+        public void EnterStartScene()
         {
+            Player_Stat.Instance.SetPlayerStat();           // 플레이어 스탯을 초기화한다.
             SceneManager.LoadScene((int)SceneType.Start);
         }
-        public void GameOver()
+        /// <summary>
+        /// 로딩 씬이 끝난 이후 바로 StartScene을 호출한다.
+        /// </summary>
+        public void EnterPlaySceneViaLoadScene()
+        {
+            LoadingScene.LoadScene((int)SceneType.Play);
+        }
+        public void EnterGameoverScene()
         {
             SceneManager.LoadScene((int)SceneType.Gameover);
         }
-
-        // ****************** 메인 메뉴 UI 관련 ****************** //
-        public void OnBtn_GameStart()
-        {
-            // SceneManager.LoadScene(1);
-            LoadingScene.LoadScene(/*"Play"*/);
-        }
-        public void OnBtn_Ranking()
+        public void EnterRankingScene()
         {
             SceneManager.LoadScene(((int)SceneType.Ranking));
         }
-        public void OnBtn_Credit()
+        public void EnterCreditScene()
         {
             SceneManager.LoadScene((int)SceneType.Credit);
         }
-        // ***************************************************** //
-        public void Restart()
+        public void EnterConfigScene()
         {
-            SceneManager.LoadScene((int)SceneType.Start);
+            SceneManager.LoadScene((int)SceneType.Config);
         }
-        public void OnBtn_Exit()
+        // ***************************************************** //
+        #endregion
+
+        /// <summary>
+        /// 프로그램을 종료한다.
+        /// </summary>
+        public void QuitProgram()
         {
             // 에디터에서는 플레이를 멈추고, 빌드 시에는 종료한다.
 #if UNITY_EDITOR
@@ -103,9 +113,12 @@ namespace GJ
             Application.Quit();
 #endif
         }
+
         /// <summary>
         /// 버틴 시간을 분이랑 초로 구분하여 문자열로 반환한다.
         /// </summary>
+        /// <param name="m_time">'초' 단위의 플레이타임</param>
+        /// <returns></returns>
         public string PlayTimeToString(float m_time)
         {
             int minute = 0;

@@ -8,19 +8,36 @@ namespace GJ
 {
     public class LoadingScene : MonoBehaviour
     {
-        static string nextScene;
+        static string nextScene_str;
+        static int nextScene_num;
+        static bool isValuePassedStr = false;
+
         [SerializeField]
         Image progressBar;
 
         /// <summary>
-        /// 로딩씬에서 다음 씬으로 넘어가는 메소드 
+        /// 로딩씬을 불러온 이후 로딩이 끝난 이후 바로 다음 씬으로 넘어가게 한다.
         /// </summary>
-        /// <param name="_sceneName">다음 씬의 이름을 string으로 입력하세요.</param>
-        public static void LoadScene(/*string _sceneName*/)
+        /// <param name="_sceneName">로딩 후 실행할 씬의 이름</param>
+        public static void LoadScene(string _sceneName)
         {
             // nextScene = _sceneName;
             // 로딩 이후 플레이씬 실행
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(GameManager.Instance.GetLoadingSceneNum);
+            nextScene_str = _sceneName;
+            isValuePassedStr = true;
+        }
+        /// <summary>
+        /// 로딩씬을 불러온 이후 로딩이 끝난 이후 바로 다음 씬으로 넘어가게 한다.
+        /// </summary>
+        /// <param name="_sceneName">로딩 후 실행할 씬의 이름</param>
+        public static void LoadScene(int _sceneNum)
+        {
+            // nextScene = _sceneNum;
+            // 로딩 이후 플레이씬 실행
+            SceneManager.LoadScene(GameManager.Instance.GetLoadingSceneNum);
+            nextScene_num = _sceneNum;
+            isValuePassedStr = false;
         }
         void Start()
         {
@@ -28,7 +45,16 @@ namespace GJ
         }
         IEnumerator LoadSceneProcess()
         {
-            AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);         // 비동기 방식으로 불러온다.
+            AsyncOperation op;
+            if (isValuePassedStr == true)
+            {
+                op = SceneManager.LoadSceneAsync(nextScene_str);                // 비동기 방식으로 불러온다.
+            }
+            else
+            {
+                op = SceneManager.LoadSceneAsync(nextScene_num);                // 비동기 방식으로 불러온다.
+            }
+
             op.allowSceneActivation = false;                                    // 씬을 90% 정도까지만 불러오고 대기 (씬 로딩 속도가 너무 빠를 때를 대비, 에셋 번들로 나눠서 빌드할 때 에셋 번들로부터 리소스를 읽어와야 하기에 씬로딩보다 리소스 로딩이 늦을 경우 로딩 되지 않은 오브젝트들이 깨져서 보일 경우를 대비 )
 
             float timer = 0f;

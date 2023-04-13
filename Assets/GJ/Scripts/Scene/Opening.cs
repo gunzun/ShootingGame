@@ -8,7 +8,7 @@ namespace GJ
     {
         public void OnEnterNextScene()
         {
-            GameManager.Instance.EnterStartSceneViaLoadScene();
+            GameManager.Instance.EnterStartScene();
         }
     }
 }

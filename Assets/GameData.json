@@ -1,9 +1,14 @@
 {
     "rank": [
         {
-            "id": "test",
-            "playTime": 154.32000732421876,
-            "score": 31
+            "id": "User1",
+            "playTime": 10.587121963500977,
+            "score": 4
+        },
+        {
+            "id": "User1",
+            "playTime": 8.426735877990723,
+            "score": 3
         }
     ]
 }

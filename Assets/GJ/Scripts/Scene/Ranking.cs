@@ -16,12 +16,22 @@ namespace GJ
         private float time;
         private int score;
         private int maxCount = 50;              // 표시할 랭킹의 수
-        private int maxDatasCount;              // JSON파일에서 로드된 데이터 배열의 개수
+        private int maxDatasCount = 0;          // JSON파일에서 로드된 데이터 배열의 개수
 
         void Start()
         {
-            maxDatasCount = GameDataManager.Instance.gameDatasAmount;
+            // 전에 있던 텍스트들이 중복되지 않도록 지워준다.
+            RankTMPro.text = null;
+            UserTMPro.text = null;
+            ScoreTMPro.text = null;
+            TimeTMPro.text = null;
 
+            // 게임 데이터가 변경되었을 때만 파일에서 데이터를 받아온다.
+            if (GameDataManager.Instance.gameDatasAmount > maxDatasCount)
+            {
+                maxDatasCount = GameDataManager.Instance.gameDatasAmount;       // 파일로 저장된 리스트 배열의 개수
+                GameDataManager.Instance.SortListInDescendingOrderByScore();    // 리스트로 저장된 배열을 점수 기준 내림차순으로 정리한다
+            }
             // JSON파일에 데이터가 있다면 정보를 가져와 화면에 띄워준다.
             for (int i = 0; i < maxCount; i++)
             {
@@ -34,15 +44,15 @@ namespace GJ
 
                     // UserID
                     userID = GameDataManager.Instance.gameDatas[i].id;
-                    UserTMPro.text = userID + "\n";
+                    UserTMPro.text += userID + "\n";
 
                     // 점수
                     score = GameDataManager.Instance.gameDatas[i].score;
-                    ScoreTMPro.text = score.ToString() + "\n";
+                    ScoreTMPro.text += score.ToString() + "\n";
 
                     // 플레이타임
                     time = GameDataManager.Instance.gameDatas[i].playTime;
-                    TimeTMPro.text = GameManager.Instance.PlayTimeToString(time) + "\n";
+                    TimeTMPro.text += GameManager.Instance.PlayTimeToString(time) + "\n";
                 }
                 else
                 {
@@ -53,7 +63,6 @@ namespace GJ
                     TimeTMPro.text += "..\n";
                 }
             }
-
         }
     }
 }
