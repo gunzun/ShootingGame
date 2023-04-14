@@ -2,13 +2,33 @@
     "rank": [
         {
             "id": "User1",
-            "playTime": 10.587121963500977,
-            "score": 4
+            "playTime": 46.88117218017578,
+            "score": 24
         },
         {
             "id": "User1",
-            "playTime": 8.426735877990723,
-            "score": 3
+            "playTime": 19.459753036499025,
+            "score": 8
+        },
+        {
+            "id": "User1",
+            "playTime": 12.761128425598145,
+            "score": 5
+        },
+        {
+            "id": "User1",
+            "playTime": 12.673521995544434,
+            "score": 5
+        },
+        {
+            "id": "User1",
+            "playTime": 7.185333728790283,
+            "score": 2
+        },
+        {
+            "id": "User1",
+            "playTime": 48.67683029174805,
+            "score": 25
         }
     ]
 }

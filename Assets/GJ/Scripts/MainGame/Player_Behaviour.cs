@@ -49,12 +49,12 @@ namespace GJ
         private void PlayerDie()
         {
             Player_Stat.Instance.IsDie = true;                                  // 플레이어를 사망처리한다.
-            Player_Stat.Instance.MaxScore = Player_Stat.Instance.CurrentScore;  // 최고 기록을 현재 기록으로 덮어쓴다.
+            Player_Stat.Instance.MaxScore = Player_Stat.Instance.CurrentScore;  // 최고 기록을 현재 기록으로 덮어쓴다.  // 23.04.14.GJ : 왜? 리스트 0번자리에 넣으려고 그랬나?
             Player_Stat.Instance.PlayTime = _playTime;                          // 플레이 타임을 보낸다.
             // 죽는 애니메이션을 재생한다.
             // 데이터를 저장한다.
-            GameDataManager.Instance.SaveData(Player_Stat.Instance.userName, _playTime, Player_Stat.Instance.CurrentScore);
             Destroy(gameObject);        // 테스트
+            GameDataManager.Instance.SaveData(Player_Stat.Instance.userName, _playTime, Player_Stat.Instance.CurrentScore);
             GameManager.Instance.EnterGameoverScene();
         }
     }

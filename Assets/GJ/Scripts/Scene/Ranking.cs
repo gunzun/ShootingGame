@@ -21,16 +21,16 @@ namespace GJ
         void Start()
         {
             // 전에 있던 텍스트들이 중복되지 않도록 지워준다.
-            RankTMPro.text = null;
-            UserTMPro.text = null;
-            ScoreTMPro.text = null;
-            TimeTMPro.text = null;
+            RankTMPro.text = "";
+            UserTMPro.text = "";
+            ScoreTMPro.text = "";
+            TimeTMPro.text = "";
 
             // 게임 데이터가 변경되었을 때만 파일에서 데이터를 받아온다.
-            if (GameDataManager.Instance.gameDatasAmount > maxDatasCount)
+            if (GameDataManager.Instance.gameDataGroup.rank.Length > maxDatasCount)
             {
-                maxDatasCount = GameDataManager.Instance.gameDatasAmount;       // 파일로 저장된 리스트 배열의 개수
-                GameDataManager.Instance.SortListInDescendingOrderByScore();    // 리스트로 저장된 배열을 점수 기준 내림차순으로 정리한다
+                maxDatasCount = GameDataManager.Instance.gameDataGroup.rank.Length;     // 파일로 저장된 리스트 배열의 개수
+                GameDataManager.Instance.SortListInDescendingOrderByScore();            // 리스트로 저장된 배열을 점수 기준 내림차순으로 정리한다
             }
             // JSON파일에 데이터가 있다면 정보를 가져와 화면에 띄워준다.
             for (int i = 0; i < maxCount; i++)

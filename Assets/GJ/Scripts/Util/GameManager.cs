@@ -40,8 +40,6 @@ namespace GJ
             }
         }
 
-        private Scene PlayScene;                    // 플레이씬을 받을 변수
-
         public int GetLoadingSceneNum { get => (int)SceneType.Loading; }
 
         private void Awake()
@@ -58,14 +56,6 @@ namespace GJ
                 Destroy(gameObject);
             }
             #endregion
-        }
-
-        void Update()
-        {
-            if (SceneManager.GetActiveScene() == PlayScene)         // 플레이씬이 켜진 상태일 때
-            {
-
-            }
         }
 
         #region #Scene관련 함수들

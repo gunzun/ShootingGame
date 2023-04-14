@@ -62,13 +62,17 @@ namespace GJ
                 CongratulationText.gameObject.SetActive(true);
             }
             // 게임 매니저에 현재 유저 데이터 추가
-            GameDataManager.Instance.LoadData();
+            // GameDataManager.Instance.LoadData();
         }
         void Update()
         {
             if (scoreAnimisEnd == false)
             {
                 ScoreAnimUI();
+            }
+            else
+            {
+
             }
             if (Input.GetMouseButtonDown(0))
             {

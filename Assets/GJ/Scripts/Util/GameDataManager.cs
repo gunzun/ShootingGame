@@ -16,9 +16,25 @@ namespace GJ
         // public GameData gameData = new GameData();
         public List<GameData> gameDatas = new List<GameData>();         // 데이터를 로드할 때 가져갈 변수
         public GameDataGroup gameDataGroup = new GameDataGroup();
-        // List<GameData> sortedList;                                      // 데이터를 점수에 따라 내림차순으로 정렬한 리스트
+        // List<GameData> sortedList;                                   // 데이터를 점수에 따라 내림차순으로 정렬한 리스트
 
-        public int gameDatasAmount = 0;                                 // 로드한 데이터의 배열 개수
+        #region Error@!!
+        // 23.04.14.GJ : 게임 데이터를 Sort 하면 갑자기 gameDatasAmount가 0이 됨.... 그전까진 숫자가 있었는데... 근데 또 프로퍼티를 지우니 정상 작동함
+        /* public int gameDatasAmount = 0;                                // 로드한 데이터의 배열 개수
+                                                                       // int tempGameDatasAmount = 0;
+        public int GameDatasAmount
+        {
+            get
+            {
+                int tempGameDatasAmount = gameDatasAmount;              // 로드한 데이터의 배열 개수를 랭킹 씬에서 부른 다음에 게임 데이터를 0으로 초기화한다.
+                if (gameDatasAmount != 0)
+                {
+                    gameDatasAmount = 0;                                    // 로드할 때마다 어마운트가 중복이 되어서 추가가 되기 때문...
+                }
+                return tempGameDatasAmount;
+            }
+        }*/
+        #endregion
         public GameData bestScoreData;                                  // 최고 점수 데이터
         public int bestScore = -1;                                      // 데이터 파일에 저장된 최고 점수 데이터 배열의 스코어
         public string bestScoreUserName;                                // 데이터 파일에 저장된 최고 점수 데이터 배열의 유저 이름
@@ -31,11 +47,11 @@ namespace GJ
         /// <summary>
         /// 게임의 데이터 파일을 Json으로 저장
         /// </summary>
-        /// <param name="_gameData"></param>
-        private void SaveData(GameDataGroup _gameData)
+        /// <param name="_gameDataGroup"></param>
+        private void SaveData(GameDataGroup _gameDataGroup)
         {
             Debug.Log(path);
-            string toJsonData = JsonUtility.ToJson(_gameData, true);
+            string toJsonData = JsonUtility.ToJson(_gameDataGroup, true);
             File.WriteAllText(path, toJsonData);
             gameTime = 0;
         }
@@ -84,8 +100,14 @@ namespace GJ
                 gameDataGroup = JsonUtility.FromJson<GameDataGroup>(jsonData);
                 for (int i = 0; i < gameDataGroup.rank.Length; i++)
                 {
-                    gameDatasAmount += 1;
-                    gameDatas.Add(gameDataGroup.rank[i]);
+                    if (gameDataGroup.rank[i] == null)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        gameDatas.Add(gameDataGroup.rank[i]);
+                    }
                 }
             }
         }
@@ -94,9 +116,13 @@ namespace GJ
         /// </summary>
         public void SortListInDescendingOrderByScore()
         {
-            // Gamedats의 score를 Key하여 기준을 잡고 내림차순으로 정렬한다. Linq 처음써본다
-            List<GameData>newGameDatas = gameDatas.OrderByDescending<GameData, int>(p => p.score).ToList<GameData>();
+            // Gamedatas의 score를 Key하여 기준을 잡고 내림차순으로 정렬한다. Linq 처음써본다
+            List<GameData> newGameDatas = gameDatas.OrderByDescending<GameData, int>(p => p.score).ToList<GameData>();
             gameDatas = newGameDatas;
+
+            // 정렬된 gameDatas 리스트를 JSON에다가 저장해준다.
+            gameDataGroup.rank = gameDatas.ToArray();
+            SaveData(gameDataGroup);
         }
 
         public bool isFileExist()
