@@ -1796,6 +1796,7 @@ GameObject:
   - component: {fileID: 1261536302}
   - component: {fileID: 1261536305}
   - component: {fileID: 1261536304}
+  - component: {fileID: 1261536306}
   m_Layer: 0
   m_Name: RankingSceneMgr
   m_TagString: Untagged
@@ -1841,7 +1842,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261536301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 303a37c27698b5f47a95908e50c12846, type: 3}
   m_Name: 
@@ -1853,9 +1854,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261536301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aef8295a74004914290c03cf5d5accc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1261536306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261536301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a81416e95510e42b3c5581efeb5536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1336058120

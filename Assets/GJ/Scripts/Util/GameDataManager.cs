@@ -20,6 +20,7 @@ namespace GJ
         public GameDataGroup gameDataGroup = new GameDataGroup();
         // List<GameData> sortedList;                                   // 데이터를 점수에 따라 내림차순으로 정렬한 리스트
         public string jsonData = "";
+        public string ReceiveJsonData = "";                             // 서버에서 받아올 JSON 데이터 문자열
         byte[] bytes;                                                   // JSON 데이터 파일을 바이트로 변환한 배열
 
         #region Error@!!
