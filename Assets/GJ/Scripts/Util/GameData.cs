@@ -23,6 +23,15 @@ namespace GJ
             playTime = _playTime;
             score = _score;
         }
+
+        private GameData GetGameData()
+        {
+
+
+            GameData info = JsonUtility.FromJson<GameData>(GameDataManager.Instance.jsonData);
+            return info;
+        }
+
     }
     [System.Serializable]
     public class GameDataGroup

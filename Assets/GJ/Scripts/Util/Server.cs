@@ -1,166 +1,122 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using System;
 using System.Net;
 using System.Net.Sockets;
-using UnityEngine;
-using UnityEngine.UI;
-using System;
-using System.IO;
-
+using System.Text;
 
 namespace GJ
 {
-    public class Server : MonoBehaviour
+    public class Server : Singleton<Server>
     {
-        public InputField PortInput;
+        Socket      serverSocket    =   null;
+        ArrayList   Connections     =   new ArrayList();
+        ArrayList   Buffer          =   new ArrayList();         // 클라이언트로부터 받은 패킷 클래스
+        ArrayList   ByteBuffers     =   new ArrayList();
 
-        List<ServerClient> clients;
-        List<ServerClient> disconnectList;
+        public const int PortNumb   =   7777;
 
-        TcpListener server;                     // 서버를 받는다.
-        bool isServerStarted;                   // 서버가 열렸나?
-
-        public void ServerCreate()
+        private void Start()
         {
-            clients = new List<ServerClient>();
-            disconnectList = new List<ServerClient>();
+            Debug.Log("Server Start");
+            this.serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint ipLocal = new IPEndPoint(IPAddress.Any, PortNumb);   //IPAddress.Any : 모든 네트워크로부터 들을 준비하겠다.
+                                                                            //바인딩
+            this.serverSocket.Bind(ipLocal);    //클라이언트로부터 받은 소켓을 로컬의 엔드포인트로 연결 하겠다.
+                                                //리스닝
+            Debug.Log("Start Listening..");
+            this.serverSocket.Listen(10);       // backlog : 클라이언트의 최대 수
+        }
 
-            try
+        void SocketClose()
+        {
+            //서버닫기
+            if (this.serverSocket != null)
             {
-                int port = PortInput.text == "" ? 7777 : int.Parse(PortInput.text);     // 포트가 비어있다면 임의로 7777 주고, 아니라면 포트인풋텍스트를 넣어준다.
-                                                                                        // 포트란 항구에서 배에 따라 자리를 나누는 것처럼 어디로 출입할 수 있는지 알려주는 역할을 한다.
-                server = new TcpListener(IPAddress.Any, port);                          // IPAddress.Any는 자신의 컴퓨터인 0.0.0.0 을 가리킨다.
-                                                                                        // 각 소켓 주소는 하나의 포트만 사용할 수 있어, 사용되지 않은 포트로 사용해야 한다.
-                server.Start();                                                         // 서버 바인드
+                this.serverSocket.Close();
+            }
+            this.serverSocket = null;
 
-                StartListening();
-                isServerStarted = true;
-                Console.WriteLine($"서버가 {port}에서 시작되었습니다.");
-            }
-            catch (Exception e)
+            //클라이언트 끊기
+            foreach (Socket client in this.Connections)
             {
-                Debug.LogError($"Socket error : {e.Message}");
+                client.Close();
             }
+            this.Connections.Clear();
+        }
+
+        private void OnApplicationQuit()
+        {
+            //시스템 종료되면 서버도 클라이언트도 정릴하겠다.
+            SocketClose();
         }
 
         private void Update()
         {
-            if (!isServerStarted) { return; }
+            ArrayList listenList = new ArrayList();
+            listenList.Add(this.serverSocket);
 
-            // 현재 연결된 클라이언트를 다 꺼낸다.
-            foreach (ServerClient c in clients)
+            Socket.Select(listenList, null, null, 1000);
+
+            //<연결요청>
+            //받은 연결요청이 있다면 리슨리스트는 0이 아니다.
+            for (int i = 0; i < listenList.Count; i++)
             {
-                // 클라이언트가 여전히 연결되어 있나? 끊어진 상태라면 Tcp를 닫고, Socket도 닫고, disconnectedList에 추가하고, continue 해서 다음 반복문을 돌린다.
-                if (!IsConnected(c.tcp))
+                //Accept
+                Socket newConnection = ((Socket)listenList[i]).Accept();
+                //클라이언트 소켓을 저장
+                this.Connections.Add(newConnection);
+                //
+                this.ByteBuffers.Add(new ArrayList());
+                Debug.Log("New Client Connected");
+            }
+
+            //서버와 연결된 클라이언트들이 하나라도 있다면
+            if (Connections.Count != 0)
+            {
+                ArrayList cloneConnections = new ArrayList(this.Connections);
+                Socket.Select(cloneConnections, null, null, 1000);
+                foreach (Socket client in cloneConnections)
                 {
-                    c.tcp.Close();
-                    disconnectList.Add(c);
-                    continue;
-                }
-                // 클라이언트가 연결되어 있으면, 클라이언트로부터 체크 메시지를 받는다.
-                else
-                {
-                    NetworkStream s = c.tcp.GetStream();                        // NetworkStream은 네트워크에서 데이터의 흐름을 담당한다. 
-                    if (s.DataAvailable)
+                    byte[] receivedBytes = new byte[512];
+                    ArrayList buffer = (ArrayList)this.ByteBuffers[cloneConnections.IndexOf(client)];
+
+                    //클라이언트로부터 전송된 데이터 담기
+                    int read = client.Receive(receivedBytes);
+                    for (int i = 0; i < read; i++)
                     {
-                        string data = new StreamReader(s, true).ReadLine();     // 데이터가 존재한다면 읽어온다.
-                        if (data != null)
+                        buffer.Add(receivedBytes[i]);
+                    }
+
+                    while (buffer.Count > 0)
+                    {
+                        //패킷의 첫번째의 정보는 전체 데이터의 크기임 그걸 가져옴.
+                        int packetDataLength = (byte)buffer[0];
+                        if (packetDataLength < buffer.Count)
                         {
-                            OnIncomingData(c, data);                           // 그 데이터가 null 이 아니라면 호출한다.
+                            ArrayList thisPacketBytes = new ArrayList(buffer);
+                            //버퍼의 뒷부분 잘라내기
+                            thisPacketBytes.RemoveRange(packetDataLength, thisPacketBytes.Count - (packetDataLength + 1));
+                            //버퍼의 가장 첫부분 잘라내기
+                            thisPacketBytes.RemoveRange(0, 1);
+                            buffer.RemoveRange(0, packetDataLength + 1);
+
+                            byte[] readBytes = (byte[])thisPacketBytes.ToArray(typeof(byte));
+
+                            SimplePacket readpacket = SimplePacket.FromByteArray(readBytes);
+                            this.Buffer.Add(readpacket);
+
+                            Debug.LogWarning("Packet Receive From Client IP :[" + client.RemoteEndPoint.ToString() + "]"
+                                + readpacket.mouseX.ToString() + " / " + readpacket.mouseY.ToString());
+                        }
+                        else
+                        {
+                            break;
                         }
                     }
                 }
-
-                for (int i = 0; i < disconnectList.Count; i++)
-                {
-                    Broadcast($"{disconnectList[i].clientName} 연결이 끊어졌습니다", clients);
-
-                    clients.Remove(disconnectList[i]);
-                    disconnectList.RemoveAt(i);
-                }
             }
-
-            bool IsConnected(TcpClient c)
-            {
-                try
-                {
-                    if (c != null && c.Client != null && c.Client.Connected)            // Client가 소켓이고, Connected가 연결되었는가? 
-                    {
-                        if (c.Client.Poll(0, SelectMode.SelectRead))                    // 클라이언트에게 연결되었는지 테스트로 1바이트 데이터를 보내주고
-                                                                                        // 제대로 받으면 true로 반환한다.
-                        {
-                            return !(c.Client.Receive(new byte[1], SocketFlags.Peek) == 0);
-                        }
-                        return true;
-                    }
-                    // 여기부터 밑에는 다 연결이 끊어진 것
-                    else { return false; }
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-        }
-
-        void StartListening()
-        {
-            server.BeginAcceptTcpClient(AcceptTcpClient, server);                       // 비동기로 듣기를 시작, 듣기를 시작하고, 다음 내용 듣기를 준비한다.
-                                                                                        // 동기로 듣기를 하면 내용이 진행될 동안 다음 내용이 실행되지 않아 멈추게 된다.
-        }
-
-
-        /// <summary>
-        /// clients 리스트에 Add할 때 이 함수가 실행된다.  
-        /// </summary>
-        /// <param name="ar"></param>
-        void AcceptTcpClient(IAsyncResult ar)
-        {
-            TcpListener listener = (TcpListener)ar.AsyncState;                          // 콜백이 뜨면은 ar로 받은 IAsyncResult를 TcpListener로 바꾼다.
-            clients.Add(new ServerClient(listener.EndAcceptTcpClient(ar)));             // 새로운 클래스인 ServerClient를 리스트에 더한다.
-            StartListening();                                                           // 그리고 또 자신을 호출하며 무한 반복한다.
-
-            // 메시지를 연결된 모두에게 보냄
-            Broadcast("%NAME", new List<ServerClient>() { clients[clients.Count - 1] });
-        }
-
-        void OnIncomingData(ServerClient c, string data)
-        {
-            if (data.Contains("&Name"))
-            {
-                c.clientName = data.Split('|')[1];
-                Broadcast($"{c.clientName}이 연결되었습니다", clients);
-            }
-
-            Broadcast($"{c.clientName} : {data}", clients);                             // 모든 client에게 string을 그대로 보낸다.
-        }
-        void Broadcast(string data, List<ServerClient> c1)
-        {
-            foreach (var c in c1)
-            {
-                try
-                {
-                    StreamWriter writer = new StreamWriter(c.tcp.GetStream());          // 쓰기모드를 활성화 한다.
-                    writer.WriteLine(data);                                             // 모든 사람들에게 string을 쓴다. 
-                    writer.Flush();                                                     // 지금까지 쓴 데이터들을 강제로 내보낸다.
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError($"쓰기 에러 : {e.Message}를 클라이언트에게 {c.clientName}");
-                }
-            }
-        }
-
-    }
-    public class ServerClient
-    {
-        public TcpClient tcp;               // tcp 형식
-        public string clientName;
-
-        public ServerClient(TcpClient clientSocket)
-        {
-            clientName = "Guest";           // 최초 생성시에는 클라이언트 이름을 Guest로 해놓는다.
-            tcp = clientSocket;             // 들어온 소켓을 넣어준다.
         }
     }
 }

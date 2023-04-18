@@ -28,37 +28,47 @@ public class UdpManager
     private Thread ListenerThread;
     #endregion
 
-    public UdpManager(string IpAddr, int Port) {
+    public UdpManager(string IpAddr, int Port)
+    {
         _IpAddr = IpAddr;
         _Port = Port;
     }
 
-    public void Initialize() {
+    public void Initialize()
+    {
         // Start TcpServer background thread
         ListenerThread = new Thread(new ThreadStart(ListenForIncommingRequest));
         ListenerThread.IsBackground = true;
         ListenerThread.Start();
     }
 
-    void ListenForIncommingRequest() {
+    void ListenForIncommingRequest()
+    {
         Debug.Log("Start Server : " + _IpAddr + ", " + _Port);
         UdpClient listener = new UdpClient(_Port);
         IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, _Port);
-        try {
-            while (true){
+        try
+        {
+            while (true)
+            {
                 byte[] bytes = listener.Receive(ref groupEP);
                 // Debug.Log(Encoding.ASCII.GetString(bytes, 0, bytes.Length));
                 var json_data = GetJsonFromByte(bytes);
                 MessageHandler(json_data);
             }
-        } catch (SocketException e) {
+        }
+        catch (SocketException e)
+        {
             Debug.Log("SocketException " + e.ToString());
-        } finally {
+        }
+        finally
+        {
             listener.Close();
         }
     }
 
-    public JsonData GetJsonFromByte(byte[] data) {
+    public JsonData GetJsonFromByte(byte[] data)
+    {
         string JsonString = Encoding.UTF8.GetString(data);
         Debug.Log(JsonString);
         var JsonData = Newtonsoft.Json.JsonConvert.DeserializeObject<JsonData>(JsonString);
@@ -67,18 +77,21 @@ public class UdpManager
 
     public void SetMessageCallback(CallbackDirection callback)
     {
-        if (_CallbackDirection == null) {
+        if (_CallbackDirection == null)
+        {
             _CallbackDirection = callback;
-        } else {
+        }
+        else
+        {
             _CallbackDirection += callback;
         }
     }
 
     private void MessageHandler(JsonData json_data)
     {
-        if (_CallbackDirection != null) {
+        if (_CallbackDirection != null)
+        {
             _CallbackDirection(json_data);
         }
     }
-}
-*/
+}*/

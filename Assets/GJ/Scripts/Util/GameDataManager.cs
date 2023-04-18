@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using System.Net;
 using System.IO;
+using UnityEngine.Networking;
 using Unity.VisualScripting.YamlDotNet.Core;
 
 
@@ -17,6 +19,8 @@ namespace GJ
         public List<GameData> gameDatas = new List<GameData>();         // 데이터를 로드할 때 가져갈 변수
         public GameDataGroup gameDataGroup = new GameDataGroup();
         // List<GameData> sortedList;                                   // 데이터를 점수에 따라 내림차순으로 정렬한 리스트
+        public string jsonData = "";
+        byte[] bytes;                                                   // JSON 데이터 파일을 바이트로 변환한 배열
 
         #region Error@!!
         // 23.04.14.GJ : 게임 데이터를 Sort 하면 갑자기 gameDatasAmount가 0이 됨.... 그전까진 숫자가 있었는데... 근데 또 프로퍼티를 지우니 정상 작동함
@@ -96,7 +100,8 @@ namespace GJ
             // path파일이 존재한다면
             if (File.Exists(path))
             {
-                string jsonData = File.ReadAllText(path);
+                jsonData = File.ReadAllText(path);
+                bytes = System.Text.Encoding.UTF8.GetBytes(jsonData);               // 바이트 단위로 JSON파일을 받는다.
                 gameDataGroup = JsonUtility.FromJson<GameDataGroup>(jsonData);
                 for (int i = 0; i < gameDataGroup.rank.Length; i++)
                 {
@@ -153,5 +158,43 @@ namespace GJ
                 bestScoreUserName = bestScoreData.id;
             }
         }*/
+
+
+        private GameData GetGameData()
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("Http");
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            request.ContentLength = bytes.Length;
+
+            using(var stream = request.GetRequestStream())
+            {
+                stream.Write(bytes, 0, bytes.Length);
+                stream.Flush();
+                stream.Close(); 
+            }
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string json = reader.ReadToEnd();
+            GameData info = JsonUtility.FromJson<GameData>(json);
+            return info;
+        }
+
+
+        public void SendDataToServer()
+        {
+            try
+            {
+                string JsonData = File.ReadAllText(path);
+                byte[] arr = System.Text.Encoding.UTF8.GetBytes(JsonData);
+                // NetworkSession.Instance.SendPacket(arr, arr.Length);
+            }
+            catch (System.Exception e)
+            {
+                Debug.Log(e.Message);
+            }
+        }
+
     }
 }
