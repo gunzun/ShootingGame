@@ -91,7 +91,7 @@ namespace GJ
         void Start()
         {
             path = Application.dataPath + "/" + fileName;       // Json 파일 저장 경로
-            LoadData();                                         // 미리 있던 파일을 저장
+            LoadData();                                         // 미리 있던 파일을 리스트로 들고온다.
             SortListInDescendingOrderByScore();                 // 리스트를 스코어를 기준으로 내림차순 정렬
         }
         public void LoadData()
@@ -131,6 +131,25 @@ namespace GJ
             SaveData(gameDataGroup);
         }
 
+        /// <summary>
+        /// 서버에서 받아온 데이터와 로컬에 있는 데이터를 비교 후 중복되는 값을 제거한다.
+        /// <param name="_data">서버에서 받아온 데이터</param>
+        /// </summary>
+        public void ReceiveServerData_And_CheckDuplicate(string _data)
+        {
+            if (System.String.IsNullOrEmpty(_data))
+            {
+                Debug.Log("_data : " + _data);
+                List<GameData> DupCheckList = new List<GameData>();
+                DupCheckList = JsonUtility.FromJson<List<GameData>>(_data);
+                gameDatas = gameDatas.Except(DupCheckList).ToList();
+            }
+            else
+            {
+                Debug.LogWarning("Server Data is Empty");
+            }
+        }
+
         public bool isFileExist()
         {
             if (File.Exists(path))
@@ -142,7 +161,6 @@ namespace GJ
                 return false;
             }
         }
-
 
         // 23.04.13 GJ -> 어차피 리스트 0번째가 최고 점수일건데 최고 점수를 알아야 할 필요가 있나?
         /*public void BestRecordScore()
@@ -159,8 +177,7 @@ namespace GJ
                 bestScoreUserName = bestScoreData.id;
             }
         }*/
-
-
+        /*
         private GameData GetGameData()
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create("Http");
@@ -182,7 +199,7 @@ namespace GJ
             return info;
         }
 
-
+        
         public void SendDataToServer()
         {
             try
@@ -196,6 +213,6 @@ namespace GJ
                 Debug.Log(e.Message);
             }
         }
-
+        */
     }
 }

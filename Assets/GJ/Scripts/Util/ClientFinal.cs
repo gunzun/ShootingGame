@@ -12,10 +12,9 @@ namespace GJ
         void Start()
         {
             // Socket EndPoint
-            IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Parse("222.237.134.178"), 10000);
+            IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Parse("222.237.134.184"), 10001);
             // 서버에 전송할 gameData 문자열
             string msg = ""; 
-            msg = GameDataManager.Instance.jsonData;
             // Socket 인스턴스 생성
             using (Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
             {
@@ -27,18 +26,24 @@ namespace GJ
                         // 종료되면 자동 client 종료, 무한 루프
                         byte[] binary = new byte[1024]; // 통신 바이너리 버퍼
                         client.Receive(binary);         // 서버로부터 메시지 대기
+
+                        
+
+                        // Trim으로 지워야 하는가? 그럼 리스트로 만들 때 이상이 안생기나?
                         string data = Encoding.ASCII.GetString(binary).Trim('\0');  // 서버로 받은 메시지를 String으로 변환
 
                         // 메시지 내용이 공백이라면 계속 대기 상태로
-                        if (System.String.IsNullOrWhiteSpace(data))
+                        if (System.String.IsNullOrEmpty(data))
                         {
-                            Debug.LogError("Data is Null Or White Space");
+                            Debug.LogWarning("Data is Null Or Empty");
                         }
+                        else
+                        {
+                            GameDataManager.Instance.ReceiveServerData_And_CheckDuplicate(data);
+                        }
+                        
+
                         Debug.Log(data);
-                        if (data != null)
-                        {
-                            GameDataManager.Instance.ReceiveJsonData = data;
-                        }
                     }
                     catch (SocketException SE)
                     {
@@ -47,19 +52,16 @@ namespace GJ
                     }
                 }).Start();     // Task 실행 
 
+                // 유저가 메시지 전송
+                msg = GameDataManager.Instance.jsonData;
+                client.Send(Encoding.ASCII.GetBytes(msg));
 
-                // 유저로부터 메시지를 받기 위한 루프
-                client.Send(Encoding.ASCII.GetBytes(msg + "\r\n"));
                 if ("EXIT".Equals(msg, StringComparison.OrdinalIgnoreCase))
                 {
                     // break;
                 }
-                Console.WriteLine($"Disconnected");
                 Debug.Log($"Disconnected");
             }
-            Console.WriteLine("Press Any Key...");
-            Debug.Log("Press Any Key...");
-            // Console.ReadLine();
         }
     }
 }

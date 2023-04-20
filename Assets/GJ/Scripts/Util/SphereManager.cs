@@ -26,7 +26,8 @@ public class SphereManager : MonoBehaviour
         characterRigidbody.velocity = velocity;
     }
 
-    void OnDirection(JsonData message)
+    void OnDirection(
+message)
     {
         string direction = message.direction;
         Debug.Log("CharacterMove : " + direction);

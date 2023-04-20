@@ -26,8 +26,6 @@ namespace GJ
 
         private GameData GetGameData()
         {
-
-
             GameData info = JsonUtility.FromJson<GameData>(GameDataManager.Instance.jsonData);
             return info;
         }

@@ -33,6 +33,7 @@ namespace GJ
                 GameDataManager.Instance.SortListInDescendingOrderByScore();            // 리스트로 저장된 배열을 점수 기준 내림차순으로 정리한다
             }
             // JSON파일에 데이터가 있다면 정보를 가져와 화면에 띄워준다.
+            // Foreach 써도 됐을거 같다.
             for (int i = 0; i < maxCount; i++)
             {
                 RankTMPro.text += (i + 1).ToString() + "\n";
