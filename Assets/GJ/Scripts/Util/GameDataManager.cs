@@ -132,21 +132,48 @@ namespace GJ
         }
 
         /// <summary>
-        /// 서버에서 받아온 데이터와 로컬에 있는 데이터를 비교 후 중복되는 값을 제거한다.
-        /// <param name="_data">서버에서 받아온 데이터</param>
+        /// 서버의 JSON_string 데이터를 List<Gamedata>로 바꾼 값을 반환한다.
         /// </summary>
-        public void ReceiveServerData_And_CheckDuplicate(string _data)
+        /// <param name="_data">서버에서 받아온 JSON_string 데이터</param>
+        /// <returns></returns>
+        public GameDataGroup ServerData_To_List(string _data)
         {
-            if (System.String.IsNullOrEmpty(_data))
+            GameDataGroup gamedatas_Server = new GameDataGroup();
+            gamedatas_Server = JsonUtility.FromJson<GameDataGroup>(_data);
+            return gamedatas_Server;
+        }
+
+        /// <summary>
+        /// 서버에서 받아온 데이터와 로컬에 있는 데이터를 비교 후 중복되는 값을 제거한다.
+        /// <paramref name="_data"/>서버에서 받아온 JSON_string 데이터</paramref>
+        /// </summary>
+        public void CheckDuplicate_ServerData(string _data)
+        {
+            // 데이터가 비어있을 시 리턴
+            if (System.String.IsNullOrEmpty(_data) == false)
             {
-                Debug.Log("_data : " + _data);
-                List<GameData> DupCheckList = new List<GameData>();
-                DupCheckList = JsonUtility.FromJson<List<GameData>>(_data);
-                gameDatas = gameDatas.Except(DupCheckList).ToList();
+                GameDataGroup serverData = new GameDataGroup();
+                serverData = ServerData_To_List(_data);             // _data를 리스트로 변환
+
+                gameDataGroup.rank = gameDataGroup.rank.Except(serverData.rank).ToArray();  // 중복 검사 후 데이터 저장
+
+                // var substractaction = gameDataGroup.rank.Select(item => new { item.id, item.playTime, item.score }).Except(serverData.rank.Select(item => new { item.id, item.playTime, item.score }));
+                // var substractaction = (from rank in serverData.rank select new { rank.id, rank.playTime, rank.score }).Except(gameDataGroup.rank.Select(field => new { field.id, field.playTime, field.score })).ToArray<GameData>();
+
+                // foreach (var data in substractaction)
+                // {
+                //     System.Console.WriteLine(data.ToString());
+                // }
+
+                gameDatas.AddRange(serverData.rank);
+
+                gameDatas = gameDatas.Distinct().ToList();
+                gameDataGroup.rank = gameDatas.ToArray();
             }
             else
             {
                 Debug.LogWarning("Server Data is Empty");
+                return;
             }
         }
 
